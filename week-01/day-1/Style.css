@@ -1,0 +1,70 @@
+body{
+    margin: 0%;
+    background: url(topography.png);
+}
+header { 
+    background-color: rgb(51, 51, 51);
+    height: 55px;
+
+}
+
+.navi{
+    padding-top: 10px;
+}
+
+.pic {
+    padding-top: 3px;
+    line-height: 40px;
+    text-align: left;
+    float: left;
+}
+
+.links {
+    text-align: right;
+    float: right;
+    padding-top: 11px;
+}
+a {
+    color: rgb(255, 00, 153);
+    text-decoration: underline;
+    padding-left: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#home {
+    margin-top: 70px
+}
+div {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    margin-top: 90px;
+}
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    color: rgb(255, 00, 153);
+}
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+p {
+    font-family: 'Courier New', Courier, monospace
+}
+.separator {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
