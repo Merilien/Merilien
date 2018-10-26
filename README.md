@@ -5,11 +5,13 @@ day 2 repos:
 [patchwork](https://github.com/Merilien/patchwork)  
 
 
+
 [best repo 
 ever](https://github.com/green-fox-academy/seadog-syllabus)
 
 
-[my website](merilien.github.io) &
+
+[my website]https://merilien.github.io) &
 [website 
 repo](https://github.com/Merilien/merilien.github.io)
 
