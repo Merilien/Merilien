@@ -1,4 +1,4 @@
-day 2 repos
+day 2 repos\n
 [git-lesson-repository](https://github.com/Merilien/git-lesson-repository)  
 [hello-world](https://github.com/Merilien/hello-world)  
 [patchwork](https://github.com/Merilien/patchwork)  
