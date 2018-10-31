@@ -13,6 +13,7 @@ public class AppendAFunc {
     }
 
     public static String appendAFunc(String stringy){
+
         return stringy+="a";
     }
 }
