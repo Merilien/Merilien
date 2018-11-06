@@ -7,26 +7,41 @@ public class SearchPalindrome {
         System.out.println(searchPalindrome("salalallaal").toString());
     }
 
-    public static String[]searchPalindrome(String stringy){
+    public static String[] searchPalindrome(String stringy){
         int len = stringy.length();
-        String palis = "";
-        for (int a = 1; a < len-1;a++){
-            if (stringy.charAt(a-1) == stringy.charAt(a+1)){
-                stringy()
-
-            }
-
+        int maxpalis = 0;
+        for (int i=1; i<len-2; i++){
+            maxpalis += i;
         }
+        String[] palist = new String[maxpalis];
+        int paliCount = 0;
+        int palindex = 0;
+        for (int i = 0; i<=len-2; i++) {
+            for (int j = i + 2; j < len; j++) {
+                String substring = stringy.substring(i, j + 1);
+                if (isPalindrom(substring)) {
+                    palist[palindex] = substring;
+                    paliCount++;
+                    palindex++;
+                }
+            }
+        }
+        String[] endlist = new String[paliCount];
+        for (int i = 0; i<paliCount; i++){
+            endlist[i] = palist[i];
+        }
+        return endlist;
     }
 
     public static boolean isPalindrom(String substring) {
         int len = substring.length();
         boolean isPali = true;
-        for (int a = 1; a < len/2; a++){
-            if (substring.charAt(len/2-a)!=(substring.charAt(len/2-a)){
+        for (int a = 0; a<= len/2; a++){
+            if (substring.charAt(a) != substring.charAt(len-1-a)) {
                 isPali = false;
                 break;
             }
         }
+        return isPali;
     }
 }

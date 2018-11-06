@@ -3,35 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b0d6ed8-e425-4a07-b616-707a6ff71faf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnimalsAndLegs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AnimalsAndLegs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AverageOfInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AverageOfInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bmi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConditionalVariableMutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountFromTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountFromTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cuboid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cuboid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DefineBasicInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DefineBasicInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawChessTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawChessTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawDiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawDiagonal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawDiamond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawDiamond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawPyramid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPyramid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DrawTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FavoriteNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FavoriteNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FizzBuzz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FizzBuzz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GuessTheNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuessTheNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HelloUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelloUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IWontCheatOnTheExams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MileToKmConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MileToKmConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiplicationTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiplicationTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OddEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OddEven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OneTwoALot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OneTwoALot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ParametricAverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ParametricAverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PartyIndicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PartyIndicator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrintBigger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrintBigger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PrintEven.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrintEven.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SecondsInADay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SecondsInADay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Swap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Swap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VariableMutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VariableMutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day-4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-4/src/SearchPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day-4/src/SearchPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day-4/src/Unique.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day-4/src/Unique.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,6 +87,34 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-817981189">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.84" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.types.edit" />
+      <usages-collector id="statistics.file.extensions.edit" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -122,10 +124,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DrawChessTable.java">
+        <entry file="file://$PROJECT_DIR$/src/ParametricAverage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="119">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -140,7 +142,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -209,19 +211,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="p1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p1" type="462c0819:PsiDirectoryNode" />
+              <item name="day-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day-3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="day-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="day-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,11 +323,16 @@
       <workItem from="1540808692399" duration="2168000" />
       <workItem from="1540810939293" duration="17351000" />
       <workItem from="1540887153963" duration="202000" />
+      <workItem from="1540978152539" duration="628000" />
+      <workItem from="1540996024856" duration="1410000" />
+      <workItem from="1541244819752" duration="44000" />
+      <workItem from="1541413733743" duration="31000" />
+      <workItem from="1541493590806" duration="1886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21917000" />
+    <option name="totallyTimeSpent" value="25916000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,7 +346,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24962178" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -490,13 +502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AverageOfInput.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/OddEven.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -574,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="26" column="52" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="26" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DrawSquare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -602,16 +600,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParametricAverage.java">
+    <entry file="file://$PROJECT_DIR$/src/DrawChessTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AverageOfInput.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPyramid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GuessTheNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="331">
           <caret line="21" column="62" selection-start-line="21" selection-start-column="62" selection-end-line="21" selection-end-column="62" />
         </state>
       </provider>
@@ -619,10 +631,10 @@
     <entry file="file://$PROJECT_DIR$/p1.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawChessTable.java">
+    <entry file="file://$PROJECT_DIR$/src/ParametricAverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>
