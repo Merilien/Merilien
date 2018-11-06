@@ -55,6 +55,7 @@ public class StudentCounter{
                 moreThan4.add(map.get(i).get("name").toString());
             }
             else {
+                // by Enci
                 sumAge += Double.valueOf(map.get(i).get("age").toString());
             }
         }

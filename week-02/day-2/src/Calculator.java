@@ -18,7 +18,6 @@ public class Calculator {
         // Waits for the user input
         // Print the result to the prompt
         // Exit
-        String[] exp = new String[3];
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please type in the expression:");
         System.out.println(calculate(scanner.next(),scanner.nextInt(),scanner.nextInt()));
