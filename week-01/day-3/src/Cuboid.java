@@ -10,7 +10,7 @@ public class Cuboid{
         double width = 100;
         double depth = 100;
 
-        System.out.println("Surface Area: " + (height*width+height*depth+depth*width)*2);
-        System.out.println("Volume: " + height*width*depth);
+        System.out.println("Surface Area: " + (height*width + height*depth + depth*width) * 2);
+        System.out.println("Volume: " + height * width * depth);
     }
 }

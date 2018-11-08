@@ -13,7 +13,7 @@ public class Matrix {
         for (int a = 0; a < mat.length; a++){
             String row = "";
             for (int b = 0; b < mat.length; b++){
-                if (a==b){
+                if (a == b){
                     mat[a][b] = 1;
                 }
                 else {

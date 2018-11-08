@@ -7,7 +7,7 @@ public class PrintBigger {
         System.out.println("Give me 2 numbers!");
         double a = scanner.nextDouble();
         double b = scanner.nextDouble();
-        if (a>b) {
+        if (a > b) {
             System.out.println(a);
         }
         else {

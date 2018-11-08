@@ -12,9 +12,10 @@ public class SubStrList {
         System.out.println(subStrList("not", searchArr));
         //  should print: `-1`
     }
+
     public static int subStrList(String subStr, String[] array){
         int index = -1;
-        for (int i = 0; i <array.length; i++){
+        for (int i = 0; i < array.length; i++){
             if (array[i].contains(subStr)){
                 index = i;
                 break;

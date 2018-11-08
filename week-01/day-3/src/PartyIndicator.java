@@ -24,7 +24,7 @@ public class PartyIndicator {
         if (girls == 0){
             System.out.println("Sausage party");
         }
-        else if (girls+boys >= 20){
+        else if (girls + boys >= 20){
             if (girls == boys) {
                 System.out.println("The party is excellent!");
             }

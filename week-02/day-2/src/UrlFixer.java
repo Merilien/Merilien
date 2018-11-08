@@ -8,8 +8,9 @@ public class UrlFixer {
 
         // 1.
         // newUrl = url.replace("bots", "odds").replace("//", "://");
+
         // 2.
-        String newUrl = url.substring(0,5) + ":" + url.substring(5,38) + "odds";
+        String newUrl = url.substring(0, 5) + ":" + url.substring(5, 38) + "odds";
 
         System.out.println(newUrl);
     }

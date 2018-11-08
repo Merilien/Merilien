@@ -4,10 +4,10 @@ public class Doubling {
 // - Create a function called `doubling` that doubles it's input parameter and returns with an integer
 // - Print the result of `doubling(baseNum)`
         int baseNum = 123;
-        System.out.println(doubling(baseNum));
+        System.out.println(doubleIt(baseNum));
     }
 
-    public static int doubling(int a){
+    public static int doubleIt(int a){
         return a*= 2;
     }
 }

@@ -13,18 +13,18 @@ public class ConnectTheDots {
         // Connect these: {{50, 100}, {70, 70}, {80, 90}, {90, 90}, {100, 70},
         // {120, 100}, {85, 130}, {50, 100}}
         graphics.setColor(Color.GREEN);
-        int[][] arr = {{50, 100}, {70, 70}, {80, 90}, {90, 90}, {100, 70},{120, 100}, {85, 130}, {50, 100}};
-        connector(graphics,arr);
+        int[][] array = {{50, 100}, {70, 70}, {80, 90}, {90, 90}, {100, 70},{120, 100}, {85, 130}, {50, 100}};
+        connectDots(graphics, array);
     }
-    public static void connector(Graphics g, int[][] array){
-        int l = array.length;
-        int[] xVals = new int[l];
-        int[] yVals = new int[l];
-        for (int i = 0; i < l; i++) {
+    public static void connectDots(Graphics g, int[][] array){
+        int len = array.length;
+        int[] xVals = new int[len];
+        int[] yVals = new int[len];
+        for (int i = 0; i < len; i++) {
             xVals[i]=array[i][0];
             yVals[i]=array[i][1];
         }
-        g.drawPolygon(xVals,yVals,l);
+        g.drawPolygon(xVals,yVals,len);
     }
 
 

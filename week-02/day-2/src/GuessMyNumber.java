@@ -8,15 +8,15 @@ public class GuessMyNumber {
         System.out.println("Give me a range! (ex. 0 100)");
         int lower = scanner.nextInt();
         int upper = scanner.nextInt();
-        System.out.println("How many lives will you have?");
+        System.out.println("How many lives do you want?");
         int lives = scanner.nextInt();
-        guessingGame(lower, upper, lives, scanner);
+        startGame(lower, upper, lives, scanner);
     }
-    public static void guessingGame(int lower, int upper, int lives, Scanner scanner){
-        Random rand = new Random();
+    public static void startGame(int lowerBound, int upperBound, int lives, Scanner scanner){
+        Random random = new Random();
         boolean correct = false;
-        int number = rand.nextInt(upper-lower+1) + lower;
-        System.out.println("I've the number between " + lower + "-" +upper + ". You have " + lives + " lives.");
+        int number = random.nextInt(upperBound - lowerBound + 1) + lowerBound;
+        System.out.println(String.format("I've the number between %d-%d. You have %d lives.", lowerBound, upperBound, lives));
         while (lives>0 && correct == false){
             int guess = scanner.nextInt();
             if (guess == number){
@@ -26,10 +26,10 @@ public class GuessMyNumber {
             else{
                 lives --;
                 if (guess < number){
-                    System.out.println("Too low. You have " + lives + " lives left.");
+                    System.out.println(String.format("Too low. You have %d lives left.", lives));
                 }
                 else {
-                    System.out.println("Too high. You have " + lives + " lives left.");
+                    System.out.println(String.format("Too high. You have %d lives left.", lives));
                 }
             }
         }

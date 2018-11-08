@@ -46,13 +46,13 @@ public class StudentCounter{
         //  - Who has got more candies than 4 candies
         //  - Sum the age of people who have lass than 5 candies
 
-        ArrayList<String> moreThan4 = new ArrayList<>();
+        ArrayList<String> moreThanFour = new ArrayList<>();
         Double sumAge = 0.0;
 
-        for (int i = 0; i< map.size(); i++){
+        for (int i = 0; i < map.size(); i++){
             int candies = (int) map.get(i).get("candies");
             if (candies > 4){
-                moreThan4.add(map.get(i).get("name").toString());
+                moreThanFour.add(map.get(i).get("name").toString());
             }
             else {
                 // by Enci
@@ -60,7 +60,7 @@ public class StudentCounter{
             }
         }
 
-        System.out.println(moreThan4);
+        System.out.println(moreThanFour);
         System.out.println(sumAge);
 
     }

@@ -20,14 +20,13 @@ public class CountFromTo {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
-        if (b>a) {
+        if (b > a) {
             for (int inc = a; inc < b; inc++){
                 System.out.println(inc);
             }
         }
         else {
             System.out.println("The second number should be bigger");
-
         }
     }
 }

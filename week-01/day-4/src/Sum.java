@@ -5,12 +5,11 @@
 //   until the given parameter and returns with an integer
 public class Sum {
     public static void main(String[] args) {
-//        int num = 3;
-//        System.out.println(sum(num));
+        System.out.println(sumIt(10));
     }
-    public static int sum(int numsToSum){
+    public static int sumIt(int num){
         int sum = 0;
-        for (int a=1; a<=numsToSum; a++) {
+        for (int a = 1; a <= num; a++) {
             sum += a;
         }
         return sum;

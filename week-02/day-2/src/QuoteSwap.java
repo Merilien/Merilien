@@ -10,16 +10,16 @@ public class QuoteSwap{
         // Create a method called quoteSwap().
 
         // Also, print the sentence to the output with spaces in between.
-        System.out.println(quoteSwap(list));
+        System.out.println(swapQuote(list));
         // Expected output: "What I cannot create I do not understand."
-
     }
-    public static String quoteSwap(ArrayList<String> quote){
+
+    public static String swapQuote(ArrayList<String> quote){
         String word = quote.get(2);
-        quote.set(2,quote.get(5));
-        quote.set(5,word);
+        quote.set(2, quote.get(5));
+        quote.set(5, word);
         String fixed = "";
-        for (int i = 0; i<quote.size(); i++){
+        for (int i = 0; i < quote.size(); i++){
             fixed += " " + quote.get(i);
         }
         return fixed;

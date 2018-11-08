@@ -7,15 +7,15 @@ public class SubInt {
         //  Returns an empty list if the number is not part any of the numbers in the list
 
         //  Example:
-        System.out.println(subInt(1, new int[] {1, 11, 34, 52, 61}));
+        System.out.println(searchSubInt(1, new int[] {1, 11, 34, 52, 61}));
         //  should print: `[0, 1, 4]`
-        System.out.println(subInt(9, new int[] {1, 11, 34, 52, 61}));
+        System.out.println(searchSubInt(9, new int[] {1, 11, 34, 52, 61}));
         //  should print: '[]'
     }
 
-    public static ArrayList<Integer> subInt(int num, int[] list){
+    public static ArrayList<Integer> searchSubInt(int num, int[] list){
         ArrayList<Integer> subList = new ArrayList<>();
-        for (Integer i = 0; i<list.length; i++){
+        for (Integer i = 0; i < list.length; i++){
             if (Integer.toString(list[i]).contains(Integer.toString(num))){
                 subList.add(i);
             }

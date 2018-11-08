@@ -13,13 +13,11 @@ public class PositionSquare {
         // draw 3 squares with that function.
         // avoid code duplication.
         for (int i = 0; i < 3; i++) {
-            squareDrawer(graphics, (int) (Math.random()*(WIDTH-50)), (int) (Math.random()*(HEIGHT-50)));
+            squareDrawer(graphics, (int) (Math.random() * (WIDTH - 50)), (int) (Math.random() * (HEIGHT - 50)));
         }
     }
 
-    public static void squareDrawer(Graphics g, int x,int y){
-        g.drawRect(x,y,50,50);
-    }
+    public static void squareDrawer(Graphics g, int x, int y){g.drawRect(x, y,50,50);}
 
     // Don't touch the code below
     static int WIDTH = 320;

@@ -23,7 +23,7 @@ public class GuessTheNumber {
             }
             else {
                 guessedRight = true;
-                System.out.println("You found the number: " +num);
+                System.out.println("You found the number: " + num);
             }
         }
     }

@@ -8,12 +8,11 @@
 // - Print the result of `appendAFunc(typo)`
 public class AppendAFunc {
     public static void main(String[] args) {
-        String typo= "Chinchill";
-        System.out.println(appendAFunc(typo));
+        String typo = "Chinchill";
+        System.out.println(appendA(typo));
     }
 
-    public static String appendAFunc(String stringy){
-
-        return stringy+="a";
+    public static String appendA(String string){
+        return string += "a";
     }
 }

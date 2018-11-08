@@ -9,7 +9,7 @@ public class AverageOfInput{
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter 5 integers!");
         int sum = 0;
-        for (int a=0; a<5; a++){
+        for (int a = 0; a < 5; a++){
             sum += scanner.nextInt();
         }
         System.out.println("Sum: " + sum + ", Average: " + sum/5);

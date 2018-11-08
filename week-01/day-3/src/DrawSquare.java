@@ -17,16 +17,16 @@ public class DrawSquare {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give me a number!");
         int dim = scanner.nextInt();
-        for (int a = 1; a<=dim; a++){
+        for (int a = 1; a <= dim; a++){
             String line = "";
-            if (a==1 || a== dim) {
+            if (a == 1 || a == dim) {
                 for (int b = 1; b <= dim; b++) {
                     line += "%";
                 }
             }
             else{
                 line += "%";
-                for (int b = 2; b<dim; b++) {
+                for (int b = 2; b < dim; b++) {
                     line += " ";
                 }
                 line += "%";

@@ -10,14 +10,12 @@ public class GoToCenter {
         // The x and y coordinates of the line's starting point
         // and draws a line from that point to the center of the canvas.
         // Draw 3 lines with that function. Use loop for that.
-        for (int i = 0; i < 4; i++) {
-            lineDrawer(graphics, (int) (Math.random()*(WIDTH)), (int) (Math.random()*(HEIGHT)));
+        for (int i = 0; i < 3; i++) {
+            drawCenterLine(graphics, (int) (Math.random() * (WIDTH)), (int) (Math.random() * (HEIGHT)));
         }
+    }
 
-    }
-    public static void lineDrawer(Graphics g, int x, int y){
-        g.drawLine(x,y,WIDTH/2,HEIGHT/2);
-    }
+    public static void drawCenterLine(Graphics g, int x, int y){g.drawLine(x,y,WIDTH/2,HEIGHT/2);}
 
     // Don't touch the code below
     static int WIDTH = 320;

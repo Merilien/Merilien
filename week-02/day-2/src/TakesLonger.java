@@ -8,9 +8,9 @@ public class TakesLonger {
 
         //quote = quote.substring(0,20) + " always takes longer than" + quote.substring(19,quote.length());
         StringBuilder builder = new StringBuilder();
-        builder.append(quote.substring(0,20));
+        builder.append(quote.substring(0, 20));
         builder.append(" always takes longer than");
-        builder.append(quote.substring(19,quote.length()));
+        builder.append(quote.substring(19, quote.length()));
         quote = builder.toString();
         System.out.println(quote);
     }

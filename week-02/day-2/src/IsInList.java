@@ -10,7 +10,7 @@ public class IsInList{
 
     }
     public static boolean checkNums(ArrayList<Integer> list){
-        ArrayList<Integer> checklist = new ArrayList<>(Arrays.asList(4,8,12,16));
+        ArrayList<Integer> checklist = new ArrayList<>(Arrays.asList(4, 8, 12, 16));
         return list.containsAll(checklist);
     }
 }

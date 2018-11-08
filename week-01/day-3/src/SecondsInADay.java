@@ -6,8 +6,8 @@ public class SecondsInADay {
 
         // Write a program that prints the remaining seconds (as an integer) from a
         // day if the current time is represented by the variables
-        int wholeDay = 24*60*60;
-        int secondsLeft = wholeDay - (currentHours*60*60 + currentMinutes*60 +currentSeconds);
+        int wholeDay = 24 * 60 * 60;
+        int secondsLeft = wholeDay - (currentHours * 60 * 60 + currentMinutes * 60 + currentSeconds);
         System.out.println(secondsLeft);
     }
 }
