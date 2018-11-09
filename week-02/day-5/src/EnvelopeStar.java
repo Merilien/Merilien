@@ -3,18 +3,22 @@ import java.awt.*;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
-public class SuperHexagon {
+public class EnvelopeStar {
 
     public static void mainDraw(Graphics graphics){
-        drawHexagons(graphics, 10, 4);
+        graphics.setColor(new Color(60,200,50));
+        int stepSize = WIDTH / (14 * 2);
+        int quarter = stepSize * 14;
+        int center = WIDTH/2;
+        graphics.drawLine(center,HEIGHT/2 - quarter, center, HEIGHT/2 + quarter);
+        for (int i = 1; i <= 14; i++) {
+            int step = i*stepSize;
+            graphics.drawLine(center, center - step, center + quarter - step, center);
+            graphics.drawLine(center, center - step, center - quarter + step, center);
+            graphics.drawLine(center, center + step, center - quarter + step, center);
+            graphics.drawLine(center, center + step, center + quarter - step, center);
+        }
     }
-
-    public static void drawHexagons(Graphics g, int size, int num){
-        int hexHight = (int) (Math.sqrt(size * size - (size/2) * (size/2))) * 2;
-        int objHeight = hexHight * (num+3);
-
-    }
-
 
     // Don't touch the code below
     static int WIDTH = 320;
