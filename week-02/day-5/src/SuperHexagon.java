@@ -3,35 +3,27 @@ import java.awt.*;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
-public class LinePlayQuarters {
+public class SuperHexagon {
 
     public static void mainDraw(Graphics graphics){
-        drawQuarters(graphics, 16);
+        drawHexagons(graphics, 4);
     }
 
-    public static void drawQuarters(Graphics g, int quarters){
-        int dim = (int) (Math.sqrt(quarters));
-        int picLength = WIDTH / dim;
-        for (int i = 0; i < dim; i++){
-            for (int j = 0; j < dim; j++) {
-                play(g, picLength, picLength*i , picLength*j);
+    public static void drawHexagons(Graphics g, int num){
+        int hexSide = WIDTH/9;
+        int hexHeight = (int) (Math.sqrt(hexSide * hexSide - (hexSide/2) * (hexSide/2))* 2);
+        int hexPoint = (int) (Math.sqrt(hexSide * hexSide - (hexHeight/2) * (hexHeight/2))* 2);
+        int objHeight = hexHeight * (num + 3);
+        int center = HEIGHT - (num + 3) * hexHeight;
+        for (int i = 0; i < num; i++) {
+            int step = i * (hexPoint + hexHeight/2);
+            for (int j = 0; j < num + i; j++) {
+   //             int x = center -
             }
         }
+
     }
 
-    public static void play(Graphics g, int picLength, int x, int y){
-        int stepSize = picLength / 14;
-        int length = 14*stepSize;
-        Color color1 = new Color(150,20,220);
-        Color color2 = new Color(60,200,50);
-        for (int i = 1; i < 14; i++) {
-            int step = i * stepSize;
-            g.setColor(color2);
-            g.drawLine(x, y + length - step, x + length - step, y+length);
-            g.setColor(color1);
-            g.drawLine(x+length, y+step, x + step, y);
-        }
-    }
 
     // Don't touch the code below
     static int WIDTH = 320;

@@ -6,22 +6,27 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 public class Triangles {
 
     public static void mainDraw(Graphics graphics){
-        drawTriangle(graphics, 21);
+        graphics.setColor(Color.WHITE);
+        graphics.drawRect(0,0, WIDTH,HEIGHT);
+        graphics.setColor(Color.BLACK);
+        drawTriangle(graphics, 159);
     }
 
     public static void drawTriangle(Graphics g, int layers){
-        int baseline = HEIGHT-1;
-        int sideLength = WIDTH / layers / 2 * 2;
-        int bigLength = sideLength * layers;
-        int triHeight = (int) (Math.sqrt(bigLength * bigLength - (bigLength/2) * (bigLength/2)) / layers);
+        int baseline = HEIGHT - 1;
+        int sideLength = (WIDTH / layers) / 2 * 2;
+        System.out.println(sideLength);
+        int objLength = sideLength * layers;
+        int triHeight = (int) (Math.sqrt(sideLength*sideLength - (sideLength/2)*(sideLength/2)));
+        System.out.println(triHeight);
         for (int i = 0; i <= layers; i++) {
             int currentY = baseline - i * triHeight;
-            int currentX = i * sideLength / 2;
+            int currentX = i * sideLength/2;
             // horizontal
-            g.drawLine(currentX, currentY, currentX + (layers - i) * sideLength, currentY);
-            // diagonal
+            g.drawLine(currentX, currentY, objLength - currentX, currentY);
+            // diagonals
             g.drawLine(currentX, currentY, currentX * 2, baseline);
-            g.drawLine(bigLength - currentX, currentY, bigLength - currentX*2, baseline);
+            g.drawLine(objLength - currentX, currentY, objLength - currentX * 2, baseline);
         }
     }
 

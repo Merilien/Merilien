@@ -15,12 +15,14 @@ public class JosephusProblem {
         for (int i = 0; i < people; i++) {
             circle.add(i+1);
         }
+
         while (circle.size() > 1) {
             for (int i = 0; i < circle.size(); i++) {
                 if (i == circle.size() - 1){circle.remove(0);}
                 else {circle.remove(i + 1);}
             }
         }
+
         return circle.get(0);
     }
 }
