@@ -1,11 +1,6 @@
-class PostIt {
-    String color;
-    String text;
-    String textColor;
+package PostIt;
 
-}
-
-public class PostItMaker{
+public class Main{
 
     public static void main(String[] args) {
         PostIt pi1 = new PostIt();

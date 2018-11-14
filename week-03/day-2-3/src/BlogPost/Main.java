@@ -1,11 +1,6 @@
-class BlogPost{
-    String authorName;
-    String title;
-    String text;
-    String publicationDate;
-}
+package BlogPost;
 
-public class BlogPosts {
+public class Main {
 
     public static void main(String[] args) {
 
