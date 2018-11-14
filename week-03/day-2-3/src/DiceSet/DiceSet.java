@@ -7,14 +7,14 @@ public class DiceSet {
     ArrayList<Integer> dice = new ArrayList<>();
 
 
-    public int[] roll() {
+    public ArrayList<Integer> roll() {
         for (int i = 0; i < 6; i++) {
             dice.add((int) (Math.random() * 6) + 1);
         }
         return dice;
     }
 
-    public List<Integer> getCurrent() {
+    public ArrayList<Integer> getCurrent() {
         return dice;
     }
 
