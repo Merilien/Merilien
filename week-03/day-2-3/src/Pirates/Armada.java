@@ -3,7 +3,7 @@ package Pirates;
 import java.util.ArrayList;
 
 public class Armada {
-    ArrayList<Ship> ships = new ArrayList<>();
+    private ArrayList<Ship> ships = new ArrayList<>();
 
     public void fillArmada(){
 //        int ArmadaSize = (int)(Math.random()*101);
