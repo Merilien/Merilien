@@ -3,16 +3,16 @@ import java.awt.*;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
-public class Crosses2 {
+public class Hexaception {
 
     public static void mainDraw(Graphics graphics){
-        graphics.setColor(Color.YELLOW);
-        graphics.fillRect(0,0,WIDTH,WIDTH);
-        graphics.setColor(Color.BLACK);
         int levels = 4;
-        int step = WIDTH / (int)(Math.pow(3,4));
-        int start = (int)(Math.pow(step*3,4));
-        drawCross(graphics, step, start);
+        int hexNum = (int)(Math.pow(2,4));
+//        int width = WIDTH
+        int smallestHight = WIDTH / hexNum;
+//        int height =
+//        int start = (int)(Math.pow(step*3,4));
+//        drawCross(graphics, step, start);
     }
 
     public static void drawCross(Graphics g, int squareSize, int x){

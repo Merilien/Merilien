@@ -7,7 +7,7 @@
 
 public class Fibonacci {
     public static void main(String[] args) {
-        System.out.println(calculateFib(7));
+        System.out.println(calculateFib(10));
     }
 
     public static int calculateFib(int n){
