@@ -6,7 +6,7 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 public class TriangleFractal {
 
     public static void mainDraw(Graphics graphics){
-        int levels = 8;
+        int levels = 9;
         int triangleNum = (int) Math.pow(2, (levels));
         int length = triangleNum * (WIDTH / triangleNum);
         drawTriangles(graphics, length, 0, 0, levels);
@@ -30,8 +30,8 @@ public class TriangleFractal {
     }
 
     // Don't touch the code below
-    static int WIDTH = 1000;
-    static int HEIGHT = 1000;
+    static int WIDTH = 1500;
+    static int HEIGHT = 1500;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");

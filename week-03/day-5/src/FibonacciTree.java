@@ -3,28 +3,34 @@ import java.awt.*;
 
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
-public class Tree {
+public class FibonacciTree {
 
     public static void mainDraw(Graphics graphics){
-        graphics.setColor(new Color(0, 48, 62));
+        graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, WIDTH, HEIGHT);
-        graphics.setColor(new Color(255, 216, 0));
-        int levels = 9;
-        int length = 50;
-        growTree(graphics, WIDTH / (levels + 2), WIDTH/2, HEIGHT - length, 0, levels);
+        int levels = 13;
+        growTree(graphics, WIDTH/2, HEIGHT, 0, levels);
     }
 
-    private static void growTree(Graphics g, double length, int xNode, int yNode, double rad, int levels){
-        if (levels == 0) {
+    private static void growTree(Graphics g, int xNode, int yNode, double rad, int levels){
+        if (levels == 1) {
             return;
         }
+        int length = calculateFib(levels);
         int[] endPoint = getEndpoint(length, xNode, yNode, rad);
         // main branch
+        g.setColor(new Color((int) ( Math.random() * 256), (int) ( Math.random() * 256), (int) ( Math.random() * 256)));
         g.drawLine(xNode, yNode, endPoint[0], endPoint[1]);
         // new branches
-        growTree(g, length * 0.9, endPoint[0], endPoint[1], calculateRad(rad, -25), levels - 1);
-        growTree(g, length, endPoint[0], endPoint[1], rad, levels - 1);
-        growTree(g, length * 0.9, endPoint[0], endPoint[1], calculateRad(rad, 25), levels - 1);
+        growTree(g, endPoint[0], endPoint[1], calculateRad(rad, -60), levels - 1);
+        growTree(g, endPoint[0], endPoint[1], calculateRad(rad, 60), levels - 1);
+    }
+
+    public static int calculateFib(int n) {
+        if (n == 0 || n == 1) {
+            return n;
+        }
+        return calculateFib(n - 1) + calculateFib(n - 2);
     }
 
     private static double calculateRad(double rads, int degrees){
@@ -37,7 +43,7 @@ public class Tree {
         return newRads;
     }
 
-    private static int[] getEndpoint(double length, int xNode, int yNode, double rad){
+    private static int[] getEndpoint(int length, int xNode, int yNode, double rad){
         int[] endPoint = new int[2];
         if (rad > 1.5 * Math.PI) {
             endPoint[0] = (int) (xNode - Math.sin(2 * Math.PI - rad) * length);
@@ -57,8 +63,8 @@ public class Tree {
 
 
     // Don't touch the code below
-    static int WIDTH = 400;
-    static int HEIGHT = 400;
+    static int WIDTH = 700;
+    static int HEIGHT = 700;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
