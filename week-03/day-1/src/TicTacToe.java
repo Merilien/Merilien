@@ -22,7 +22,7 @@ public class TicTacToe {
     }
 
     public static String ticTacResult(String file){
-        try{
+        try {
             List<String> result = Files.readAllLines(Paths.get(file));
             String xwin = "XXX";
             String owin = "OOO";
@@ -48,7 +48,7 @@ public class TicTacToe {
 
             return "Draw";
 
-        } catch (IOException e){
+        } catch (IOException e) {
             System.out.println("Can't read file.");
         }
         return null;

@@ -6,7 +6,7 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 public class TriangleFractal {
 
     public static void mainDraw(Graphics graphics){
-        int levels = 9;
+        int levels = 6;
         int triangleNum = (int) Math.pow(2, (levels));
         int length = triangleNum * (WIDTH / triangleNum);
         drawTriangles(graphics, length, 0, 0, levels);
@@ -20,6 +20,7 @@ public class TriangleFractal {
         // big, outer triangle
         int[] XBig = {point1x, point1x + sideLength, point1x + sideLength/2};
         int[] YBig = {point1y, point1y, (int) (point1y + triHeight)};
+        g.setColor(new Color((int) ( Math.random() * 256), (int) ( Math.random() * 256), (int) ( Math.random() * 256)));
         g.drawPolygon(XBig, YBig, 3);
         // small, inner triangles
         int[] XSmall = {point1x, point1x + sideLength/2, point1x + sideLength/4};
@@ -30,8 +31,8 @@ public class TriangleFractal {
     }
 
     // Don't touch the code below
-    static int WIDTH = 1500;
-    static int HEIGHT = 1500;
+    static int WIDTH = 320;
+    static int HEIGHT = 320;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");

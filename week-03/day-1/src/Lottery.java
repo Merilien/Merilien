@@ -1,10 +1,8 @@
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class Lottery {
 
@@ -13,19 +11,21 @@ public class Lottery {
         System.out.println(findMostCommons("lottery.csv"));
     }
 
-    public static ArrayList<String> findMostCommons(String file){
-        HashMap<String, Integer> counts = new HashMap<>();
-        try{
-            for (String line : Files.readAllLines(Paths.get(file))){
+    public static HashMap<String, Integer> findMostCommons(String file) {
+        ArrayList<String> nums = new ArrayList<>();
+        ArrayList<Integer> counts = new ArrayList<>();
+        try {
+            for (String line : Files.readAllLines(Paths.get(file))) {
                 String[] splitLine = line.split(";");
                 for (int i = 11; i < 16; i++) {
                     String num = splitLine[i];
-                    if (counts.containsKey(num)){
-                        int count = counts.get(num);
-                        counts.put(num, count + 1);
+                    if (nums.contains(num)) {
+                        int index = nums.indexOf(num);
+                        counts.set(index, counts.get(index) + 1);
                     }
                     else {
-                        counts.put(num, 1);
+                        nums.add(num);
+                        counts.add(0);
                     }
                 }
             }
@@ -33,19 +33,22 @@ public class Lottery {
             System.out.println("Can't read file.");
         }
 
-        ArrayList<String> maxcounts = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        HashMap<String, Integer> maxCounts = new HashMap<>();
+        while (maxCounts.size() < 5){
             int max = 0;
-            String maxKey = "";
-            for (String key : counts.keySet()) {
-                if (counts.get(key) > max) {
-                    max = counts.get(key);
-                    maxKey = key;
+            for (int count : counts) {
+                if (count > max) {
+                    max = count;
                 }
             }
-            maxcounts.add(maxKey);
-            counts.remove(maxKey);
+            for (int i = 0; i < nums.size(); i++) {
+                if (counts.get(i) == max) {
+                    maxCounts.put(nums.get(i), counts.get(i));
+                    nums.remove(i);
+                    counts.remove(i);
+                }
+            }
         }
-        return maxcounts;
+        return maxCounts;
     }
 }

@@ -13,7 +13,7 @@ public class JosephusProblem {
     public static int getBestSeat(int people) {
         ArrayList<Integer> circle = new ArrayList<Integer>();
         for (int i = 0; i < people; i++) {
-            circle.add(i+1);
+            circle.add(i + 1);
         }
 
         while (circle.size() > 1) {
