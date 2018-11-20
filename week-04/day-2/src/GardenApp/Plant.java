@@ -14,7 +14,7 @@ public class Plant {
     }
 
     public boolean needsWater() {
-        return waterAmount < 0;
+        return waterAmount <= 0;
     }
 
     public String getColor() {
