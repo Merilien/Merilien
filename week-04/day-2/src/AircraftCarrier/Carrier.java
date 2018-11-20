@@ -11,7 +11,7 @@ public class Carrier {
 
     public Carrier(int ammo) {
         store = new ArrayList<>();
-        setHP(5000);
+        setHP(10000);
         ammoStorage = ammo;
     }
 
