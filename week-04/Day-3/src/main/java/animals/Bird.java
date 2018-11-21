@@ -1,6 +1,9 @@
 package main.java.animals;
 
-public class Bird extends Animal implements EggBreeder {
+
+import Flyable.Flyable;
+
+public class Bird extends Animal implements EggBreeder, Flyable {
 
 
     public Bird(String name) {
@@ -25,5 +28,20 @@ public class Bird extends Animal implements EggBreeder {
     @Override
     public String breed() {
         return breedWithEgg();
+    }
+
+    @Override
+    public void land() {
+        System.out.println("puff");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("flapflap");
+    }
+
+    @Override
+    public void takeOff() {
+        System.out.println("swoosh");
     }
 }

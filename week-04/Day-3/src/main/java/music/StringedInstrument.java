@@ -5,5 +5,9 @@ public abstract class StringedInstrument extends Instrument {
 
     public abstract String sound();
 
+    public void play() {
+        System.out.println(String.format("%s, a %d-stringed instrument that goes %s", name, numberOfStrings, sound()));
+    }
+
 
 }

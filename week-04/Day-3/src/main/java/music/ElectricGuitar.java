@@ -18,8 +18,4 @@ public class ElectricGuitar extends StringedInstrument {
         return "Twang";
     }
 
-    @Override
-    public void play() {
-        System.out.println(String.format("%s, a %d-stringed instrument that goes %s", name, numberOfStrings,sound()));
-    }
 }

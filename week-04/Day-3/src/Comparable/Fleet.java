@@ -21,6 +21,10 @@ public class Fleet {
         Collections.sort(things);
     }
 
+    public ArrayList<Thing> getThings() {
+        return things;
+    }
+
     @Override
     public String toString() {
         String result = "";

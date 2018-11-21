@@ -17,8 +17,4 @@ public class Violin extends StringedInstrument {
         return "Screech";
     }
 
-    @Override
-    public void play() {
-        System.out.println(String.format("%s, a %d-stringed instrument that goes %s", name, numberOfStrings, sound()));
-    }
 }

@@ -18,8 +18,4 @@ public class BassGuitar extends StringedInstrument {
         return "Duum-duum-duum";
     }
 
-    @Override
-    public void play() {
-        System.out.println(String.format("%s, a %d-stringed instrument that goes %s", name, numberOfStrings, sound()));
-    }
 }
