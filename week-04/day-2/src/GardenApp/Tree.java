@@ -3,15 +3,15 @@ package GardenApp;
 public class Tree extends Plant {
 
     public Tree(String color) {
-        super(color);
+        super(color, 0.4, 10);
     }
 
     public void water(int amount) {
-        waterAmount += amount * 0.4;
+        waterAmount += amount * absorption;
     }
 
     public boolean needsWater() {
-        return waterAmount < 10;
+        return waterAmount < waterNeed;
     }
 
 }

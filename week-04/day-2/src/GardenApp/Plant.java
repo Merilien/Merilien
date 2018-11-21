@@ -1,24 +1,29 @@
 package GardenApp;
 
-public class Plant {
+public abstract class Plant {
 
     protected double waterAmount;
     protected String color;
+    protected double absorption;
+    protected int waterNeed;
 
-    public Plant(String color) {
+    public Plant(String color, double absorption, int waterNeed) {
         this.color = color;
+        this.absorption = absorption;
+        this.waterNeed = waterNeed;
     }
 
-    public void water(int amount) {
-        waterAmount += amount;
-    }
+    public abstract void water(int amount);
 
-    public boolean needsWater() {
-        return waterAmount <= 0;
-    }
+    public abstract boolean needsWater();
 
     public String getColor() {
         return color;
+    }
+
+    public String toString() {
+        return (String.format("The %s %s ", getColor(), getClass().getSimpleName()) +
+                (needsWater() ? "needs water" : "doesn't need water"));
     }
 
 

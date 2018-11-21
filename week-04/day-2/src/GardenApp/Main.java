@@ -9,10 +9,9 @@ public class Main {
         myGarden.addPlant(new Tree("purple"));
         myGarden.addPlant(new Tree("orange"));
 
-        myGarden.getInfo();
-
         myGarden.waterGarden(40);
         myGarden.waterGarden(70);
+        myGarden.getInfo();
 
     }
 }
