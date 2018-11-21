@@ -23,9 +23,7 @@ public class Thing implements Comparable<Thing> {
     @Override
     public int compareTo(Thing thing) {
         if (this.completed == thing.completed) {
-            if (this.name.toLowerCase().charAt(0) < thing.name.toLowerCase().charAt(0)) {
-                return -1;
-            }
+            return this.name.compareTo(thing.name);
         } else if (!this.completed && thing.completed) {
             return -1;
         }
