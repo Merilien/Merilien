@@ -6,7 +6,9 @@ public class Person {
     protected String gender;
 
     public Person() {
-        this("Jane Doe", 30, "female");
+        this.name = "Jane Doe";
+        this.age = 30;
+        this.gender = "female";
     }
 
     public Person(String name, int age, String gender) {
