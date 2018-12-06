@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LoginFom</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+
+<body>
+    <form action="/login" method="POST">
+        <p>ACCOUNT LOGIN</p>
+        <div>
+            <label for="name">USERNAME</label>
+            <input type="text" id="name" name="user_name" required autofocus>
+        </div>
+        <div>
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="user_pw" required minlength="8">
+            <!--<input type="checkbox" id="show_pw" name="show_pw">-->
+            <a href="/password_recovery">Forgot Password?</a>
+        </div>
+        <div class="button">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</body>
+
+</html>
