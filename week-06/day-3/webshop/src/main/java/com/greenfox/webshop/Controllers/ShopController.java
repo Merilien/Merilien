@@ -46,10 +46,9 @@ public class ShopController {
     }
 
     @PostMapping("/webshop/products/search_item")
-    public String acceptSearch(@RequestParam String keyword) {
-       return "redirect:/webshop/products/search_item?keyword=" + keyword;
+    public String acceptSearch(@RequestParam String search) {
+       return "redirect:/webshop/products/search_item?keyword=" + search;
     }
-
 
     @GetMapping("/webshop/show/average_stock")
     public String averageStock(Model model) {

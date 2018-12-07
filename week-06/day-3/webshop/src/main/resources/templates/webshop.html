@@ -6,35 +6,43 @@
     <link rel="stylesheet" href="/shopstyle.css"/>
 </head>
 <body>
-    <nav>
-        <h1>Christmas Magic Shop</h1>
-        <div id="buttons">
-            <button type="button" onclick="location.href='/webshop/products/available';">ONLY AVAILABLE</button>
-            <button type="button" onclick="location.href='/webshop/products/sort_by_price';">CHEAPEST FIRST</button>
-            <button type="button" onclick="location.href='/webshop/products/search_item?keyword=nike';">CONTAINS NIKE</button>
-            <button type="button" onclick="location.href='/webshop/show/average_stock';">AVERAGE STOCK</button>
-            <button type="button" onclick="location.href='/webshop/show/most_expensive_item';">MOST EXPENSIVE AVAILABLE</button>
-        </div>
-        <form action="/webshop/products/search_item" method="POST" >
-            <input type="search" id="keyword" name="keyword" >
-            <button type="submit" id="search_button" name="search_button">SEARCH</button>
-        </form>
-    </nav>
-    <table>
-        <thead>
+    <div id="content">
+        <nav>
+            <h1>Magical Christmas Shoppe</h1>
+            <div id="buttons">
+                <button type="button" onclick="location.href='/webshop/products/available';">ONLY AVAILABLE</button>
+                <button type="button" onclick="location.href='/webshop/products/sort_by_price';">CHEAPEST FIRST</button>
+                <button type="button" onclick="location.href='/webshop/products/search_item?keyword=nike';">CONTAINS NIKE
+                </button>
+                <button type="button" onclick="location.href='/webshop/show/average_stock';">AVERAGE STOCK</button>
+                <button type="button" onclick="location.href='/webshop/show/most_expensive_item';">MOST EXPENSIVE
+                    AVAILABLE
+                </button>
+            </div>
+            <form action="/webshop/products/search_item" method="POST">
+                <p>Search our wonderful products:</p>
+                <div id="searchbar">
+                    <input type="search" id="search" name="search" placeholder="SEARRRRRRRCCCH">
+                    <button type="submit" id="search_button" name="search_button">SEARCH</button>
+                </div>
+            </form>
+        </nav>
+        <table>
+            <thead>
             <tr>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Price</th>
                 <th>Quantity of stock</th>
             </tr>
-        </thead>
-        <tr th:each="item : ${items}">
-            <td th:text="${item.getName()}"></td>
-            <td th:text="${item.getDescription()}"></td>
-            <td th:text="${item.getPrice()}"></td>
-            <td th:text="${item.getStock()}"></td>
-        </tr>
-    </table>
+            </thead>
+            <tr th:each="item : ${items}">
+                <td class="name" th:text="${item.getName()}"></td>
+                <td class="description" th:text="${item.getDescription()}"></td>
+                <td class="price" th:text="'$' + ${item.getPrice()}"></td>
+                <td class="stock" th:text="${item.getStock()}"></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>

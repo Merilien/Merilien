@@ -1,32 +1,35 @@
 body {
-    width: 835px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: darkgreen;
 }
 
-nav {
+#content {
+    width: 835px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto 20px auto;
+    padding: 40px;
     font-family: Arial;
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 45px;
     color: red;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin: 0px 0px 0px 30px;
     border-bottom: 5px dashed red;
 }
 
 #buttons {
     display: inline-table;
     width: 100%;
+    font-size: 15px;
+    height: 30px;
 }
 
 button {
     margin-right: 10px;
     color: white;
     font-weight: bold;
-    font-size: 15px;
-    height: 30px;
     background-color: red;
     border: none;
     border-radius: 5px;
@@ -38,8 +41,62 @@ button:nth-last-child(1) {
 }
 
 form {
-    
+    display: block;
 }
 
+p {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgreen;
+    margin: 40px 0px 0px 0px;
+}
 
+#searchbar {
+    margin: 0px 0px 0px 0px;
+}
 
+#search {
+    height: 50px;
+    width: 725px;
+    border-radius: 5px;
+    border: 2px solid darkgreen;
+    font-size: 30px;
+    paddingeft: 5px;
+}
+
+#search_button {
+    background-color: darkgreen;
+    height: 50px;
+    font-size: 30px;
+    float: right;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 40px;
+    width: 100%;
+}
+
+tr {
+    height: 60px;
+}
+
+th {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+
+td {
+    color: darkgreen;
+    padding-left: 5px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.price, .stock {
+    font-size: 30px;
+    text-align: center;
+}
