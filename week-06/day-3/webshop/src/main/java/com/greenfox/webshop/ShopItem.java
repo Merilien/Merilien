@@ -7,10 +7,11 @@ public class ShopItem implements Comparable<ShopItem>{
     private int quantityOfStock;
 
 
-    public ShopItem(String name, String description, double price) {
+    public ShopItem(String name, String description, double price, int initialstock) {
         this.name = name;
         addDescription(description);
         setPrice(price);
+        addToStock(initialstock);
     }
 
     public void addDescription(String description) {
@@ -31,6 +32,10 @@ public class ShopItem implements Comparable<ShopItem>{
 
     public String getName() {
         return name;
+    }
+
+    public String getDescription() {
+        return description;
     }
 
     public double getPrice() {

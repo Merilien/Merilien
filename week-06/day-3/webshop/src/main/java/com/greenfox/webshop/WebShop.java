@@ -17,6 +17,10 @@ public class WebShop {
         items.add(item);
     }
 
+    public List<ShopItem> getItems() {
+        return items;
+    }
+
     public List<ShopItem> listAvailable() {
         List<ShopItem> availableItems = new ArrayList<>();
         for (ShopItem item : items) {
@@ -28,7 +32,7 @@ public class WebShop {
     }
 
     public List<ShopItem> listByPrice() {
-        List<ShopItem> sortedItems = new ArrayList<>();
+        List<ShopItem> sortedItems = new ArrayList<>(items);
         Collections.copy(sortedItems, items);
         Collections.sort(sortedItems);
         return sortedItems;
