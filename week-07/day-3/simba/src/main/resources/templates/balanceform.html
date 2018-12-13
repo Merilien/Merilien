@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balance Raiser</title>
+</head>
+<body>
+<div>
+    <form th:action="@{/thx}" th:method="post">
+        <p>Select an account to add to</p>
+        <div id="selector" th:each="account : ${accounts}" th:object="${account}">
+            <input type="radio" name="selectAccount" th:id="*{name}" th:value="${accountStat.index}">
+            <label th:for="*{name}" th:text="*{name}"></label>
+        </div>
+        <button type="submit">SUBMIT</button>
+    </form>
+</div>
+
+</body>
+</html>

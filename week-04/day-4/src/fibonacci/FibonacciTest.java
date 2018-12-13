@@ -15,8 +15,7 @@ class FibonacciTest {
 
     @Test
     void calculateFibTest2() {
-        n = 6;
-        assertEquals(8, Fibonacci.calculateFib(n));
+        assertEquals(8, Fibonacci.calculateFib(6));
     }
 
     @Test
