@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1 th:text="'We currently have ' + ${studentCount} + ' students.'"></h1>
+<div>
+    <a th:href="${studentList}">List of students</a>
+    <a th:href="${addStudent}">Add a new student</a>
+</div>
+
+</body>
+</html>
