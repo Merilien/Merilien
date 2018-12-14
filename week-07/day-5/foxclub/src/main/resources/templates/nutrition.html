@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrition Store</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="information">Information</a></li>
+        <li><a href="nutrition-store">Nutrition Store</a></li>
+        <li><a href="trick-center">Trick Center</a></li>
+        <li><a href="action-history">Action History</a></li>
+    </ul>
+</nav>
+<div>
+    <form th:action="'/nutrition-store?name=' + ${name}" th:method="post">
+        <label for="food">Food: </label>
+        <select name="food" id="food">
+            <div th:each="fooditem : ${foodlist}">
+                <option th:value="${fooditemStat.index}" th:text="${fooditem}"></option>
+            </div>
+        </select>
+        <label for="drink">Drink: </label>
+            <select name="drink" id="drink">
+                <div th:each="drinkitem : ${drinklist}">
+                    <option th:value="${drinkitemStat.index}" th:text="${drinkitem}"></option>
+                </div>
+            </select>
+        <button type="submit">Change</button>
+    </form>
+</div>
+
+
+</body>
+</html>
