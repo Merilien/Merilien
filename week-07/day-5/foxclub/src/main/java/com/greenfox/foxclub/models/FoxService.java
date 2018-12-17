@@ -50,7 +50,7 @@ public class FoxService {
     public boolean isNewName(String name) {
         if (foxes.size() == 0) {
             return true;
-        } else if (getFoxByName(name).equals(null)) {
+        } else if (getFoxByName(name) == null) {
             return true;
         }
         return false;

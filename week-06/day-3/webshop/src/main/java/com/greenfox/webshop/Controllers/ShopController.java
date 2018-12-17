@@ -15,10 +15,10 @@ public class ShopController {
     public ShopController(){
         myShop = new WebShop("HUF");
         myShop.addItem(new ShopItem("A single sock", "We don't know", 2000, 1));
-        myShop.addItem(new ShopItem("Nikecell reindeer", "Not very impressive", 120, 70));
         myShop.addItem(new ShopItem("Christmas cookie assortment", "Yum", 2500, 2800));
         myShop.addItem(new ShopItem("Christmas present", "???", 700, 900));
         myShop.addItem(new ShopItem("Santa's hat", "Warm & fuzzy", 8000000, 1));
+        myShop.addItem(new ShopItem("Nikecell reindeer", "Not very impressive", 120, 70));
     }
 
     @GetMapping("/webshop/products")

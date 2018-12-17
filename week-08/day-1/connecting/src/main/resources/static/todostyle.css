@@ -1,0 +1,15 @@
+body {
+    margin: 20px auto auto 70px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+table {
+    font-size: 18px;
+}
+
+td {
+    border: 1px solid darkgrey;
+}

@@ -19,13 +19,13 @@
         <label for="food">Food: </label>
         <select name="food" id="food">
             <div th:each="fooditem : ${foodlist}">
-                <option th:value="${fooditemStat.index}" th:text="${fooditem}"></option>
+                <option th:value="${fooditem}" th:text="${fooditem}"></option>
             </div>
         </select>
         <label for="drink">Drink: </label>
             <select name="drink" id="drink">
                 <div th:each="drinkitem : ${drinklist}">
-                    <option th:value="${drinkitemStat.index}" th:text="${drinkitem}"></option>
+                    <option th:value="${drinkitem}" th:text="${drinkitem}"></option>
                 </div>
             </select>
         <button type="submit">Change</button>
