@@ -8,23 +8,31 @@
 </head>
 <body>
 <div>
-    <h1>TODOS FOR TODAY:</h1>
+    <div>
+        <h1>TODOS FOR TODAY:</h1>
+        <a th:href="'/todo/add'">Add a new todo</a>
+    </div>
     <table>
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>ACTION</th>
-                <th>DONE</th>
-                <th>URGENT</th>
-            </tr>
+        <tr>
+            <th>ID</th>
+            <th>ACTION</th>
+            <th>DONE</th>
+            <th>URGENT</th>
+        </tr>
         </thead>
         <tbody th:each="todo : ${todos}" th:object="${todo}">
-            <tr>
+        <tr>
             <td th:text="*{id}">
             <td th:text="*{title}">
             <td th:text="*{done}">
             <td th:text="*{urgent}">
-            </tr>
+            <td>
+            <form th:action="'todo/delete'" th:method="get">
+                <button type="submit" name="id" th:value="*{id}">Delete</button>
+            </form>
+            </td>
+        </tr>
         </tbody>
     </table>
 </div>

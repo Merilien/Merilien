@@ -1,9 +1,6 @@
 package com.greenfox.connecting.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Todo {
@@ -15,6 +12,8 @@ public class Todo {
     private Boolean done;
 
     public Todo() {
+        urgent = false;
+        done = false;
     }
 
     public Todo(String title) {
