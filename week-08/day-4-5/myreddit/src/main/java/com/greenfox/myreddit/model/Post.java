@@ -18,10 +18,12 @@ public class Post implements Comparable<Post>{
     private Date date;
 
     public Post() {
+        date = new Date();
         score = 0;
     }
 
     public Post(String title, String url) {
+        date = new Date();
         this.title = title;
         this.url = url;
         score = 0;

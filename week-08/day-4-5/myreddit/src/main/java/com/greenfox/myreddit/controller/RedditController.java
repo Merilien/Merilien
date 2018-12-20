@@ -18,8 +18,8 @@ public class RedditController {
     }
 
     @GetMapping("/")
-    public String showPosts(Model model) {
-        model.addAttribute("posts", postService.getOrderedPosts());
+    public String showPosts(Model model, @RequestParam(defaultValue = "0") int page) {
+        model.addAttribute("posts", postService.getPageablePosts(page));
         return "mainpage";
     }
 

@@ -3,6 +3,10 @@ package com.greenfox.myreddit.service;
 import com.greenfox.myreddit.model.Post;
 import com.greenfox.myreddit.repository.PostRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
@@ -18,10 +22,6 @@ public class PostService {
     @Autowired
     public PostService(PostRepository repository) {
         this.repository = repository;
-    }
-
-    public Post createPost() {
-        return new Post();
     }
 
     public void savePost(Post post) {
@@ -44,8 +44,8 @@ public class PostService {
         return repository.findById(id).get();
     }
 
-    public List<Post> getOrderedPosts() {
-        return repository.getOrderedPosts();
+    public Page<Post> getPageablePosts(int page) {
+        return repository.findAll(new PageRequest(page, 10, Sort.by("score").descending()));
     }
 
 }
