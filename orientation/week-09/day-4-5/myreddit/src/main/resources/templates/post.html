@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Post Page</title>
+</head>
+<body>
+<div>
+    <a th:href="${post.url}" th:text="${post.url}"></a>
+</div>
+<div>
+    <a th:href="'posts?user=' + ${userid}">Go back</a>
+</div>
+</body>
+</html>
