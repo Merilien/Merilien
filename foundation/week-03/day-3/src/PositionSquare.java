@@ -6,7 +6,7 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 public class PositionSquare {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         // create a square drawing function that takes 2 parameters:
         // the x and y coordinates of the square's top left corner
         // and draws a 50x50 square from that point.
@@ -17,7 +17,9 @@ public class PositionSquare {
         }
     }
 
-    public static void squareDrawer(Graphics g, int x, int y){g.drawRect(x, y,50,50);}
+    public static void squareDrawer(Graphics g, int x, int y) {
+        g.drawRect(x, y, 50, 50);
+    }
 
     // Don't touch the code below
     static int WIDTH = 320;

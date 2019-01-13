@@ -12,12 +12,12 @@ public class StarryNight {
         //  - The stars should have random positions on the canvas
         //  - The stars should have random color (some shade of grey)
         graphics.setColor(Color.BLACK);
-        graphics.fillRect(0,0,WIDTH,HEIGHT);
+        graphics.fillRect(0, 0, WIDTH, HEIGHT);
         int starNum = 9000;
         for (int i = 0; i < starNum; i++) {
-            int shade = (int)(Math.random() * 256);
+            int shade = (int) (Math.random() * 256);
             graphics.setColor(new Color(shade, shade, shade));
-            int size = (int)(Math.random() * 2) + 1;
+            int size = (int) (Math.random() * 2) + 1;
             graphics.fillRect((int) (Math.random() * WIDTH), (int) (Math.random() * HEIGHT), size, size);
         }
     }

@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="/shopstyle.css"/>
 </head>
 <body>
-    <nav>
-        <h1>Christmas Magic Shop</h1>
-        <button type="submit" value="ONLY AVAILABLE" onclick="window.location='/webshop/products/available';" />
-        <button type="submit" value="CHEAPEST FIRST" onclick="window.location='/webshop/products/sort_by_price';" />
-        <button type="submit" value="CONTAINS NIKE" onclick="window.location='/webshop/products/search_item?keyword=nike';" />
-        <button type="submit" value="AVERAGE STOCK" onclick="window.location='/webshop/show/average_stock';" />
-        <button type="submit" value="MOST EXPENSIVE AVAILABLE" onclick="window.location='/webshop/show/most_expensive_item';" />
-    </nav>
-    <p th:text="${thingToShow}"></pth:text></p>
+<nav>
+    <h1>Christmas Magic Shop</h1>
+    <button type="submit" value="ONLY AVAILABLE" onclick="window.location='/webshop/products/available';"/>
+    <button type="submit" value="CHEAPEST FIRST" onclick="window.location='/webshop/products/sort_by_price';"/>
+    <button type="submit" value="CONTAINS NIKE"
+            onclick="window.location='/webshop/products/search_item?keyword=nike';"/>
+    <button type="submit" value="AVERAGE STOCK" onclick="window.location='/webshop/show/average_stock';"/>
+    <button type="submit" value="MOST EXPENSIVE AVAILABLE"
+            onclick="window.location='/webshop/show/most_expensive_item';"/>
+</nav>
+<p th:text="${thingToShow}"></p>
 </body>
 </html>

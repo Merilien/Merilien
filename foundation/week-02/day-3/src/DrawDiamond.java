@@ -18,7 +18,7 @@ public class DrawDiamond {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give me an odd number!");
         int height = scanner.nextInt();
-        for (int a = 1; a <= height; a += 2){
+        for (int a = 1; a <= height; a += 2) {
             String spaces = "";
             String stars = "";
             for (int b = 1; b <= a; b++) {

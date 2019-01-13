@@ -5,20 +5,20 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class SuperHexagon {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         drawHexagons(graphics, 4);
     }
 
-    public static void drawHexagons(Graphics g, int num){
-        int hexSide = WIDTH/9;
-        int hexHeight = (int) (Math.sqrt(hexSide * hexSide - (hexSide/2) * (hexSide/2))* 2);
-        int hexPoint = (int) (Math.sqrt(hexSide * hexSide - (hexHeight/2) * (hexHeight/2))* 2);
+    public static void drawHexagons(Graphics g, int num) {
+        int hexSide = WIDTH / 9;
+        int hexHeight = (int) (Math.sqrt(hexSide * hexSide - (hexSide / 2) * (hexSide / 2)) * 2);
+        int hexPoint = (int) (Math.sqrt(hexSide * hexSide - (hexHeight / 2) * (hexHeight / 2)) * 2);
         int objHeight = hexHeight * (num + 3);
         int center = HEIGHT - (num + 3) * hexHeight;
         for (int i = 0; i < num; i++) {
-            int step = i * (hexPoint + hexHeight/2);
+            int step = i * (hexPoint + hexHeight / 2);
             for (int j = 0; j < num + i; j++) {
-   //             int x = center -
+                //             int x = center -
             }
         }
 

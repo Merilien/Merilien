@@ -7,8 +7,8 @@ public class Refactorio {
         System.out.println(refactorio(4));
     }
 
-    public static int refactorio(int n){
-        if (n == 1){
+    public static int refactorio(int n) {
+        if (n == 1) {
             return n;
         }
         return n * refactorio(n - 1);

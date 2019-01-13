@@ -10,7 +10,7 @@ public class Reservation implements Reservationy {
     @Override
     public String getDowBooking() {
         String[] days = {"MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"};
-        return days[(int) (Math.random()*7)];
+        return days[(int) (Math.random() * 7)];
     }
 
     @Override

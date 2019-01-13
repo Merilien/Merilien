@@ -20,9 +20,9 @@ public class Main {
         System.out.print("I choose you, " + choosePokemon(pokemonOfAsh, wildPokemon).name);
     }
 
-    private static Pokemon choosePokemon(List<Pokemon> pokeList, Pokemon wild){
-        for (Pokemon pokemon : pokeList){
-            if (pokemon.isEffectiveAgainst(wild)){
+    private static Pokemon choosePokemon(List<Pokemon> pokeList, Pokemon wild) {
+        for (Pokemon pokemon : pokeList) {
+            if (pokemon.isEffectiveAgainst(wild)) {
                 return pokemon;
             }
         }

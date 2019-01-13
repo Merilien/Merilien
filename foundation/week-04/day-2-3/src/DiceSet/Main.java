@@ -7,7 +7,7 @@ public class Main {
         DiceSet myDice = new DiceSet();
         myDice.roll();
         int rollsNeeded = 0;
-        while (!checkIfSixes(myDice.getCurrent())){
+        while (!checkIfSixes(myDice.getCurrent())) {
             myDice.reroll();
             rollsNeeded++;
         }
@@ -15,10 +15,10 @@ public class Main {
         System.out.println("Rolls needed: " + rollsNeeded);
     }
 
-    public static boolean checkIfSixes(ArrayList<Integer> dice){
+    public static boolean checkIfSixes(ArrayList<Integer> dice) {
         boolean sixes = true;
-        for (int die : dice){
-            if (die !=6){
+        for (int die : dice) {
+            if (die != 6) {
                 sixes = false;
             }
         }

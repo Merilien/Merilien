@@ -5,21 +5,21 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class FibonacciTree {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         graphics.setColor(Color.WHITE);
         graphics.fillRect(0, 0, WIDTH, HEIGHT);
         int levels = 13;
-        growTree(graphics, WIDTH/2, HEIGHT, 0, levels);
+        growTree(graphics, WIDTH / 2, HEIGHT, 0, levels);
     }
 
-    private static void growTree(Graphics g, int xNode, int yNode, double rad, int levels){
+    private static void growTree(Graphics g, int xNode, int yNode, double rad, int levels) {
         if (levels == 1) {
             return;
         }
         int length = calculateFib(levels);
         int[] endPoint = Tree.getEndpoint(length, xNode, yNode, rad);
         // main branch
-        g.setColor(new Color((int) ( Math.random() * 256), (int) ( Math.random() * 256), (int) ( Math.random() * 256)));
+        g.setColor(new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
         g.drawLine(xNode, yNode, endPoint[0], endPoint[1]);
         // new branches
         growTree(g, endPoint[0], endPoint[1], Tree.calculateRad(rad, -60), levels - 1);

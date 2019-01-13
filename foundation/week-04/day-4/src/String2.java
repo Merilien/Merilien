@@ -6,12 +6,12 @@ public class String2 {
         System.out.println(removeXes("xxooooxoetrdtfzguhxxx"));
     }
 
-    public static String removeXes(String string){
+    public static String removeXes(String string) {
         if (string.length() == 0) {
             return "";
         }
-        String newChar =  String.valueOf(string.charAt(0));
-        if (string.charAt(0) == 'x'){
+        String newChar = String.valueOf(string.charAt(0));
+        if (string.charAt(0) == 'x') {
             newChar = "";
         }
         return newChar + (removeXes(string.substring(1)));

@@ -7,8 +7,8 @@ public class Bunny1 {
 
     }
 
-    public static int countEars(int n){
-        if (n == 1){
+    public static int countEars(int n) {
+        if (n == 1) {
             return 2;
         }
         return 2 + countEars(n - 1);

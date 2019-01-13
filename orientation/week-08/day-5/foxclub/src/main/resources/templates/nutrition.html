@@ -23,11 +23,11 @@
             </div>
         </select>
         <label for="drink">Drink: </label>
-            <select name="drink" id="drink">
-                <div th:each="drinkitem : ${drinklist}">
-                    <option th:value="${drinkitem}" th:text="${drinkitem}"></option>
-                </div>
-            </select>
+        <select name="drink" id="drink">
+            <div th:each="drinkitem : ${drinklist}">
+                <option th:value="${drinkitem}" th:text="${drinkitem}"></option>
+            </div>
+        </select>
         <button type="submit">Change</button>
     </form>
 </div>

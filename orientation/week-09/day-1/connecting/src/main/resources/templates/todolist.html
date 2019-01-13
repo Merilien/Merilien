@@ -28,9 +28,9 @@
             <td th:text="*{done}">
             <td th:text="*{urgent}">
             <td>
-            <form th:action="'todo/delete'" th:method="get">
-                <button type="submit" name="id" th:value="*{id}">Delete</button>
-            </form>
+                <form th:action="'todo/delete'" th:method="get">
+                    <button type="submit" name="id" th:value="*{id}">Delete</button>
+                </form>
             </td>
         </tr>
         </tbody>

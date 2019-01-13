@@ -5,9 +5,9 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class Crosses {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         graphics.setColor(Color.YELLOW);
-        graphics.fillRect(0,0,WIDTH,WIDTH);
+        graphics.fillRect(0, 0, WIDTH, WIDTH);
         graphics.setColor(Color.BLACK);
         int levels = 5;
         int numOfSquares = (int) Math.pow(3, (levels));
@@ -16,14 +16,14 @@ public class Crosses {
         drawCross(graphics, width / 3, 0, 0, levels);
     }
 
-    public static void drawCross(Graphics g, int squareSize, int x, int y, int levels){
-        if (levels == 0){
+    public static void drawCross(Graphics g, int squareSize, int x, int y, int levels) {
+        if (levels == 0) {
             return;
         }
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 g.drawRect(x + i * squareSize, y + j * squareSize, squareSize, squareSize);
-                if ((i + j) % 2 != 0){
+                if ((i + j) % 2 != 0) {
                     drawCross(g, squareSize / 3, x + i * squareSize, y + j * squareSize, levels - 1);
                 }
             }

@@ -5,9 +5,9 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class Hexaception {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         int levels = 4;
-        int hexNum = (int)(Math.pow(2,4));
+        int hexNum = (int) (Math.pow(2, 4));
 //        int width = WIDTH
         int smallestHight = WIDTH / hexNum;
 //        int height =
@@ -15,8 +15,8 @@ public class Hexaception {
 //        drawCross(graphics, step, start);
     }
 
-    public static void drawCross(Graphics g, int squareSize, int x){
-        if (squareSize * 3 > WIDTH){
+    public static void drawCross(Graphics g, int squareSize, int x) {
+        if (squareSize * 3 > WIDTH) {
             return;
         }
         for (int i = 0; i < 3; i++) {

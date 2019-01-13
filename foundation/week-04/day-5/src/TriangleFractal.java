@@ -5,28 +5,28 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class TriangleFractal {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         int levels = 6;
         int triangleNum = (int) Math.pow(2, (levels));
         int length = triangleNum * (WIDTH / triangleNum);
         drawTriangles(graphics, length, 0, 0, levels);
     }
 
-    public static void drawTriangles(Graphics g, int sideLength, int point1x, int point1y, int levels){
-        if (levels == 0){
+    public static void drawTriangles(Graphics g, int sideLength, int point1x, int point1y, int levels) {
+        if (levels == 0) {
             return;
         }
-        double triHeight = Math.sqrt(sideLength * sideLength - (sideLength/2) * (sideLength/2));
+        double triHeight = Math.sqrt(sideLength * sideLength - (sideLength / 2) * (sideLength / 2));
         // big, outer triangle
-        int[] XBig = {point1x, point1x + sideLength, point1x + sideLength/2};
+        int[] XBig = {point1x, point1x + sideLength, point1x + sideLength / 2};
         int[] YBig = {point1y, point1y, (int) (point1y + triHeight)};
-        g.setColor(new Color((int) ( Math.random() * 256), (int) ( Math.random() * 256), (int) ( Math.random() * 256)));
+        g.setColor(new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
         g.drawPolygon(XBig, YBig, 3);
         // small, inner triangles
-        int[] XSmall = {point1x, point1x + sideLength/2, point1x + sideLength/4};
-        int[] YSmall = {point1y, point1y, (int) (point1y + triHeight/2)};
+        int[] XSmall = {point1x, point1x + sideLength / 2, point1x + sideLength / 4};
+        int[] YSmall = {point1y, point1y, (int) (point1y + triHeight / 2)};
         for (int i = 0; i < 3; i++) {
-            drawTriangles(g, sideLength/2, XSmall[i], YSmall[i], levels - 1);
+            drawTriangles(g, sideLength / 2, XSmall[i], YSmall[i], levels - 1);
         }
     }
 

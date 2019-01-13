@@ -21,29 +21,28 @@ public class Logs {
         }
     }
 
-    public static ArrayList<String> getIPs(List<String> data){
+    public static ArrayList<String> getIPs(List<String> data) {
         ArrayList<String> IPs = new ArrayList<>();
         for (String line : data) {
             String IP = line.split(" ")[8];
-            if (!IPs.contains(IP)){
+            if (!IPs.contains(IP)) {
                 IPs.add(IP);
             }
         }
         return IPs;
     }
 
-    public static double getRatio(List<String> data){
+    public static double getRatio(List<String> data) {
         double getCount = 0;
         double postCount = 0;
-        for (String line : data){
+        for (String line : data) {
             String method = line.split(" ")[11];
-            if (method.equals("GET")){
+            if (method.equals("GET")) {
                 getCount++;
-            }
-            else if (method.equals("POST")){
+            } else if (method.equals("POST")) {
                 postCount++;
             }
         }
-        return getCount/postCount;
+        return getCount / postCount;
     }
 }

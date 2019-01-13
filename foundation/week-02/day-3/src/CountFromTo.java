@@ -21,11 +21,10 @@ public class CountFromTo {
         int b = scanner.nextInt();
 
         if (b > a) {
-            for (int inc = a; inc < b; inc++){
+            for (int inc = a; inc < b; inc++) {
                 System.out.println(inc);
             }
-        }
-        else {
+        } else {
             System.out.println("The second number should be bigger");
         }
     }

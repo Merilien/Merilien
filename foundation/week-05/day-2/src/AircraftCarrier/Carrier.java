@@ -77,7 +77,7 @@ public class Carrier {
             totalDamage += craft.allDamage;
         }
         return String.format("HP: %d, Aircraft count: %d, Ammo Storage: %d, Total damage: %d",
-               HP, store.size(), ammoStorage, totalDamage) + builder;
+                HP, store.size(), ammoStorage, totalDamage) + builder;
     }
 
     public void setHP(int HP) {

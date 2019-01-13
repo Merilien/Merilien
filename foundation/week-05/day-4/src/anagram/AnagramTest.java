@@ -25,8 +25,8 @@ class AnagramTest {
     void testCheckAnagram4() {
         assertTrue(Anagram.checkAnagram("000000000001", "000010000000"));
     }
-    @Test
 
+    @Test
     void testCheckAnagram5() {
         assertFalse(Anagram.checkAnagram("apples", ""));
     }

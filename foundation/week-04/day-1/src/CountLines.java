@@ -11,10 +11,10 @@ public class CountLines {
         System.out.println(countLines("textfile.txt"));
     }
 
-    public static int countLines(String file){
-        try{
+    public static int countLines(String file) {
+        try {
             return Files.readAllLines(Paths.get(file)).size();
-        } catch (Exception e){
+        } catch (Exception e) {
             return 0;
         }
     }

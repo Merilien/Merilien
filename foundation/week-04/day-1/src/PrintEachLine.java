@@ -12,9 +12,9 @@ public class PrintEachLine {
         printLines("my-file.txt");
     }
 
-    public static void printLines(String path){
+    public static void printLines(String path) {
         try {
-            for (String line : Files.readAllLines(Paths.get(path))){
+            for (String line : Files.readAllLines(Paths.get(path))) {
                 System.out.println(line);
             }
         } catch (IOException e) {

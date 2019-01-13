@@ -18,8 +18,8 @@ public class TodoController {
         this.repository = repository;
     }
 
-    @GetMapping(path={"", "/", "/list"})
-    public String list(Model model, @RequestParam(required = false, name= "isActive") Boolean isActive,
+    @GetMapping(path = {"", "/", "/list"})
+    public String list(Model model, @RequestParam(required = false, name = "isActive") Boolean isActive,
                        @ModelAttribute("todo2delete") Todo todo) {
         if (isActive != null) {
             if (isActive) {
@@ -49,7 +49,5 @@ public class TodoController {
         repository.deleteById(id);
         return "redirect:/todo";
     }
-
-
 
 }

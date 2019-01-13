@@ -17,18 +17,20 @@ public class DrawDiagonal {
         System.out.println("Give me a number!");
         int dim = scanner.nextInt();
 
-        for (int a = 1; a <= dim; a++){
+        for (int a = 1; a <= dim; a++) {
             String line = "";
             if (a == 1 || a == dim) {
                 for (int b = 1; b <= dim; b++) {
                     line += "%";
                 }
-            }
-            else{
+            } else {
                 line += "%";
                 for (int b = 2; b < dim; b++) {
-                    if (a == b){line += "%";}
-                    else {line += " ";}
+                    if (a == b) {
+                        line += "%";
+                    } else {
+                        line += " ";
+                    }
                 }
                 line += "%";
             }

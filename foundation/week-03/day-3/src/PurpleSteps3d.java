@@ -12,9 +12,9 @@ public class PurpleSteps3d {
         int shift = 0;
         for (int i = 1; i < 7; i++) {
             graphics.setColor(Color.BLACK);
-            graphics.drawRect(10 + shift, 10 + shift, i * 10,i * 10);
-            graphics.setColor(new Color(160,40,255));
-            graphics.fillRect(10 + 1 + shift, 10 + 1 + shift, i * 10 - 1,i * 10 - 1);
+            graphics.drawRect(10 + shift, 10 + shift, i * 10, i * 10);
+            graphics.setColor(new Color(160, 40, 255));
+            graphics.fillRect(10 + 1 + shift, 10 + 1 + shift, i * 10 - 1, i * 10 - 1);
             shift += i * 10;
         }
     }

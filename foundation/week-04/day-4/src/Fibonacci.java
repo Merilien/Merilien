@@ -10,8 +10,8 @@ public class Fibonacci {
         System.out.println(calculateFib(10));
     }
 
-    public static int calculateFib(int n){
-        if (n == 0 || n == 1){
+    public static int calculateFib(int n) {
+        if (n == 0 || n == 1) {
             return n;
         }
         return calculateFib(n - 1) + calculateFib(n - 2);

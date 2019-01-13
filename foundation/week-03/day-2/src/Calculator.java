@@ -23,21 +23,17 @@ public class Calculator {
         System.out.println(calculate(scanner.next(), scanner.nextInt(), scanner.nextInt()));
     }
 
-    public static int calculate(String op, int o1, int o2){
+    public static int calculate(String op, int o1, int o2) {
         int result = 0;
-        if (op.equals("+")){
+        if (op.equals("+")) {
             result = o1 + o2;
-        }
-        else if (op.equals("-")){
+        } else if (op.equals("-")) {
             result = o1 - o2;
-        }
-        else if (op.equals("*")){
+        } else if (op.equals("*")) {
             result = o1 * o2;
-        }
-        else if (op.equals("/")){
+        } else if (op.equals("/")) {
             result = o1 / o2;
-        }
-        else if (op.equals("%")){
+        } else if (op.equals("%")) {
             result = o1 % o2;
         }
         return result;

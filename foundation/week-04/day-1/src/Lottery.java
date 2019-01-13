@@ -22,19 +22,18 @@ public class Lottery {
                     if (nums.contains(num)) {
                         int index = nums.indexOf(num);
                         counts.set(index, counts.get(index) + 1);
-                    }
-                    else {
+                    } else {
                         nums.add(num);
                         counts.add(0);
                     }
                 }
             }
-        } catch (IOException e){
+        } catch (IOException e) {
             System.out.println("Can't read file.");
         }
 
         HashMap<String, Integer> maxCounts = new HashMap<>();
-        while (maxCounts.size() < 5){
+        while (maxCounts.size() < 5) {
             int max = 0;
             for (int count : counts) {
                 if (count > max) {

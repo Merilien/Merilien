@@ -5,16 +5,16 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class LinePlay {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         play(graphics, 14);
     }
 
-    public static void play(Graphics g, int lines){
+    public static void play(Graphics g, int lines) {
         int stepSize = WIDTH / lines;
         int length = lines * stepSize;
         int padding = 3;
-        Color color1 = new Color(150,20,220);
-        Color color2 = new Color(60,200,50);
+        Color color1 = new Color(150, 20, 220);
+        Color color2 = new Color(60, 200, 50);
         for (int i = 1; i < lines; i++) {
             int step = i * stepSize;
             g.setColor(color2);

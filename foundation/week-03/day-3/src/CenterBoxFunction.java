@@ -6,19 +6,19 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 public class CenterBoxFunction {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         // create a square drawing function that takes 1 parameter:
         // the square size
         // and draws a square of that size to the center of the canvas.
         // draw 3 squares with that function.
         // avoid code duplication.
         for (int i = 0; i < 3; i++) {
-            drawCenterBox(graphics, (int)(Math.random() * WIDTH));
+            drawCenterBox(graphics, (int) (Math.random() * WIDTH));
         }
     }
 
-    public static void drawCenterBox(Graphics g, int size){
-        g.drawRect(WIDTH/2 - size/2, HEIGHT/2 - size/2, size, size);
+    public static void drawCenterBox(Graphics g, int size) {
+        g.drawRect(WIDTH / 2 - size / 2, HEIGHT / 2 - size / 2, size, size);
     }
 
     // Don't touch the code below

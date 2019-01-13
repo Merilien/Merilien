@@ -21,18 +21,15 @@ public class PartyIndicator {
         int girls = scanner.nextInt();
         int boys = scanner.nextInt();
 
-        if (girls == 0){
+        if (girls == 0) {
             System.out.println("Sausage party");
-        }
-        else if (girls + boys >= 20){
+        } else if (girls + boys >= 20) {
             if (girls == boys) {
                 System.out.println("The party is excellent!");
-            }
-            else{
+            } else {
                 System.out.println("Quite cool party!");
             }
-        }
-        else{
+        } else {
             System.out.println("Average party...");
         }
     }

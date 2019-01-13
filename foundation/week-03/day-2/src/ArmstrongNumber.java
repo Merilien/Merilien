@@ -11,8 +11,8 @@ public class ArmstrongNumber {
         int sum = 0;
         int len = digits.length();
         for (int i = 0; i < len; i++) {
-            int num = Integer.parseInt(digits.substring(i,i+1));
-            for (int j = 0; j < len-2; j++) {
+            int num = Integer.parseInt(digits.substring(i, i + 1));
+            for (int j = 0; j < len - 2; j++) {
                 num *= num;
             }
             sum += num;

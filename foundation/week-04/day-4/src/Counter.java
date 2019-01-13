@@ -5,9 +5,9 @@ public class Counter {
         countDown(10);
     }
 
-    public static void countDown(int n){
+    public static void countDown(int n) {
         System.out.println(n);
-        if (n == 0){
+        if (n == 0) {
             return;
         }
         countDown(n - 1);

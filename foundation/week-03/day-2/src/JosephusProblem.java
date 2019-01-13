@@ -18,8 +18,11 @@ public class JosephusProblem {
 
         while (circle.size() > 1) {
             for (int i = 0; i < circle.size(); i++) {
-                if (i == circle.size() - 1){circle.remove(0);}
-                else {circle.remove(i + 1);}
+                if (i == circle.size() - 1) {
+                    circle.remove(0);
+                } else {
+                    circle.remove(i + 1);
+                }
             }
         }
 

@@ -6,8 +6,8 @@ import java.util.Scanner;
 // integers like:
 //
 // Sum: 22, Average: 4.4
-public class ParametricAverage{
-    public static void main(String[] args){
+public class ParametricAverage {
+    public static void main(String[] args) {
         double sum = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many numbers would you like to enter?");
@@ -16,7 +16,7 @@ public class ParametricAverage{
             System.out.println("Enter a number!");
             sum += scanner.nextInt();
         }
-        double avg = sum/nums;
+        double avg = sum / nums;
         System.out.println("Sum: " + sum + ", Average: " + avg);
     }
 }

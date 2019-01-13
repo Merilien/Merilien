@@ -20,7 +20,7 @@ public class MultiplicationTable {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give me an integer!");
         int num = scanner.nextInt();
-        for (int a = 1; a < 11; a++){
+        for (int a = 1; a < 11; a++) {
             System.out.println(a + " * " + num + " = " + num * a);
         }
     }

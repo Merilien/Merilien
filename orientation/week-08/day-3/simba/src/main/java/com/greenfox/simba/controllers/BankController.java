@@ -45,19 +45,19 @@ public class BankController {
 
 
     @PostMapping("/thx")
-    public String addToBalance(@ModelAttribute(name="selectAccount") int index) {
+    public String addToBalance(@ModelAttribute(name = "selectAccount") int index) {
         accounts.get(index).incrementBalance();
         return "thankyoupage";
     }
 
     @GetMapping("/add_account")
-    public String displayAccountForm(Model model, @ModelAttribute(name="account") BankAccount account) {
+    public String displayAccountForm(Model model, @ModelAttribute(name = "account") BankAccount account) {
         model.addAttribute("account", account);
         return "accountform";
     }
 
     @PostMapping("/add_account")
-    public String createAccount(@ModelAttribute(name="account") BankAccount account) {
+    public String createAccount(@ModelAttribute(name = "account") BankAccount account) {
         accounts.add(account);
         return "redirect:/show_table";
     }

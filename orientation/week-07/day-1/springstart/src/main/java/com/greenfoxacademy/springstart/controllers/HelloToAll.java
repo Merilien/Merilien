@@ -13,9 +13,9 @@ public class HelloToAll {
 
     @RequestMapping("/web/greetall")
     public String greeting(Model model) {
-        String rgb = (int)(Math.random()*256) + ", " + (int)(Math.random()*256) + ", " + (int)(Math.random()*256);
+        String rgb = (int) (Math.random() * 256) + ", " + (int) (Math.random() * 256) + ", " + (int) (Math.random() * 256);
         model.addAttribute("color", rgb);
-        model.addAttribute("size", ((int)(Math.random() * 91) + 10) + "px");
+        model.addAttribute("size", ((int) (Math.random() * 91) + 10) + "px");
         model.addAttribute("hello", hellos[(int) (Math.random() * hellos.length)]);
         return "greetall";
     }

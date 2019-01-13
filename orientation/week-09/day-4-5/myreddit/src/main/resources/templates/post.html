@@ -10,7 +10,7 @@
     <a th:href="${post.url}" th:text="${post.url}"></a>
 </div>
 <div>
-    <a th:href="'posts?user=' + ${userid}">Go back</a>
+    <a th:href="@{'~/posts?user=' + ${userid}}">Go back</a>
 </div>
 </body>
 </html>

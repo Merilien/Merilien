@@ -1,4 +1,5 @@
 package Comparable;
+
 import Printable.*;
 
 public class Domino implements Comparable<Domino>, Printable {

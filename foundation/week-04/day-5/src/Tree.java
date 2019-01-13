@@ -18,38 +18,36 @@ public class Tree {
             return;
         }
         int[] endPoint = getEndpoint(length, xNode, yNode, rad);
-        // main branch
         g.drawLine(xNode, yNode, endPoint[0], endPoint[1]);
-        // new branches
         growTree(g, length * 0.9, endPoint[0], endPoint[1], calculateRad(rad, -25), levels - 1);
         growTree(g, length, endPoint[0], endPoint[1], rad, levels - 1);
         growTree(g, length * 0.9, endPoint[0], endPoint[1], calculateRad(rad, 25), levels - 1);
     }
 
-    public static double calculateRad(double rads, int degrees){
+    public static double calculateRad(double rads, int degrees) {
         double newRads = rads + degrees * 0.0174532925;
-        if (newRads < 0){
+        if (newRads < 0) {
             newRads = 2 * Math.PI + newRads;
-        } else if (newRads > 2 * Math.PI){
+        } else if (newRads > 2 * Math.PI) {
             newRads = newRads - 2 * Math.PI;
         }
         return newRads;
     }
 
-    public static int[] getEndpoint(double length, int xNode, int yNode, double rad){
+    public static int[] getEndpoint(double length, int xNode, int yNode, double rad) {
         int[] endPoint = new int[2];
         if (rad > 1.5 * Math.PI) {
             endPoint[0] = (int) (xNode - Math.sin(2 * Math.PI - rad) * length);
             endPoint[1] = (int) (yNode - Math.cos(2 * Math.PI - rad) * length);
-        } else if  (rad > Math.PI){
+        } else if (rad > Math.PI) {
             endPoint[0] = (int) (xNode - Math.cos(1.5 * Math.PI - rad) * length);
             endPoint[1] = (int) (yNode + Math.sin(1.5 * Math.PI - rad) * length);
-        } else if (rad > Math.PI/2){
+        } else if (rad > Math.PI / 2) {
             endPoint[0] = (int) (xNode + Math.sin(Math.PI - rad) * length);
             endPoint[1] = (int) (yNode + Math.cos(Math.PI - rad) * length);
         } else {
-            endPoint[0] = (int) (xNode + Math.cos(Math.PI/2 - rad) * length);
-            endPoint[1] = (int) (yNode - Math.sin(Math.PI/2 - rad) * length);
+            endPoint[0] = (int) (xNode + Math.cos(Math.PI / 2 - rad) * length);
+            endPoint[1] = (int) (yNode - Math.sin(Math.PI / 2 - rad) * length);
         }
         return endPoint;
     }

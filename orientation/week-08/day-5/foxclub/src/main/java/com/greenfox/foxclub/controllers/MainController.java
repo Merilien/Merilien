@@ -16,7 +16,7 @@ public class MainController {
     private FoxService service;
 
     @GetMapping("/")
-    public String loadIndex(Model model, @RequestParam(required = false) String name ) {
+    public String loadIndex(Model model, @RequestParam(required = false) String name) {
         if (name == null) {
             return "redirect:/login";
         }
@@ -59,7 +59,7 @@ public class MainController {
         service.activateFox(name);
         service.getActiveFox().setFood(food);
         service.getActiveFox().setDrink(drink);
-        return "redirect:/information?name=" + name;
+        return "redirect:/?name=" + name;
     }
 
 }

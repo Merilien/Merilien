@@ -8,16 +8,16 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
 public class FourRectangles {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         // draw four different size and color rectangles.
         // avoid code duplication.
         for (int i = 1; i < 5; i++) {
-            graphics.setColor(new Color((int) (Math.random()*256),(int) (Math.random()*256),(int) (Math.random()*256)));
-            int width = (int) (Math.random()* (WIDTH+1));
-            int height = (int) (Math.random()* (HEIGHT+1));
-            int x = (int) (Math.random()* (WIDTH-width+1));
-            int y = (int) (Math.random()* (WIDTH-height+1));
-            graphics.drawRect(x,y,width,height);
+            graphics.setColor(new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
+            int width = (int) (Math.random() * (WIDTH + 1));
+            int height = (int) (Math.random() * (HEIGHT + 1));
+            int x = (int) (Math.random() * (WIDTH - width + 1));
+            int y = (int) (Math.random() * (WIDTH - height + 1));
+            graphics.drawRect(x, y, width, height);
         }
 
 

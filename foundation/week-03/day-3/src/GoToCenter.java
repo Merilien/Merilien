@@ -15,7 +15,9 @@ public class GoToCenter {
         }
     }
 
-    public static void drawCenterLine(Graphics g, int x, int y){g.drawLine(x,y,WIDTH/2,HEIGHT/2);}
+    public static void drawCenterLine(Graphics g, int x, int y) {
+        g.drawLine(x, y, WIDTH / 2, HEIGHT / 2);
+    }
 
     // Don't touch the code below
     static int WIDTH = 320;

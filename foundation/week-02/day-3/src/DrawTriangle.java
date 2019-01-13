@@ -14,9 +14,9 @@ public class DrawTriangle {
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many lines do you want?");
         int height = scanner.nextInt();
-        for (int a = 1; a <= height; a++){
+        for (int a = 1; a <= height; a++) {
             String starline = "";
-            for (int b = 1; b <= a; b++){
+            for (int b = 1; b <= a; b++) {
                 starline += "*";
             }
             System.out.println(starline);

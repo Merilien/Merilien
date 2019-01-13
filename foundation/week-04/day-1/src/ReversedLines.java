@@ -10,7 +10,8 @@ public class ReversedLines {
         // Create a method that decrypts reversed-lines.txt
         decryptFile("reversed-lines.txt");
     }
-    public static void decryptFile(String file){
+
+    public static void decryptFile(String file) {
         try {
             List<String> data = Files.readAllLines(Paths.get(file));
             List<String> decodedData = new ArrayList<>();

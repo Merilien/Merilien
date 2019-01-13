@@ -5,23 +5,23 @@ import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 public class Triangles {
 
-    public static void mainDraw(Graphics graphics){
+    public static void mainDraw(Graphics graphics) {
         graphics.setColor(Color.WHITE);
-        graphics.drawRect(0,0, WIDTH,HEIGHT);
+        graphics.drawRect(0, 0, WIDTH, HEIGHT);
         graphics.setColor(Color.BLACK);
         drawTriangle(graphics, 159);
     }
 
-    public static void drawTriangle(Graphics g, int layers){
+    public static void drawTriangle(Graphics g, int layers) {
         int baseline = HEIGHT - 1;
         int sideLength = (WIDTH / layers) / 2 * 2;
         System.out.println(sideLength);
         int objLength = sideLength * layers;
-        int triHeight = (int) (Math.sqrt(sideLength*sideLength - (sideLength/2)*(sideLength/2)));
+        int triHeight = (int) (Math.sqrt(sideLength * sideLength - (sideLength / 2) * (sideLength / 2)));
         System.out.println(triHeight);
         for (int i = 0; i <= layers; i++) {
             int currentY = baseline - i * triHeight;
-            int currentX = i * sideLength/2;
+            int currentX = i * sideLength / 2;
             // horizontal
             g.drawLine(currentX, currentY, objLength - currentX, currentY);
             // diagonals

@@ -7,31 +7,39 @@ public class Ship {
     private Pirate captain;
     private boolean hasCrew;
 
-    public void fillShip(){
+    public void fillShip() {
         captain = new Pirate();
-        int crewSize = (int)(Math.random()*101);
-        for (int i = 0; i < crewSize; i++) { crew.add(new Pirate()); }
+        int crewSize = (int) (Math.random() * 101);
+        for (int i = 0; i < crewSize; i++) {
+            crew.add(new Pirate());
+        }
         hasCrew = true;
     }
 
-    public void printShipInfo(){
-        if (!hasCrew){ System.out.println("The ship is empty"); }
-        else {
+    public void printShipInfo() {
+        if (!hasCrew) {
+            System.out.println("The ship is empty");
+        } else {
             StringBuilder builder = new StringBuilder();
             builder.append(String.format("The captain had %d drinks, ", captain.checkDrinks()));
             if (captain.checkAlive()) {
                 builder.append("is alive");
-                if (captain.checkConscious()) { builder.append(" and conscious."); }
-                else { builder.append(" and has passed out."); }
-            } else { builder.append("and has died."); }
+                if (captain.checkConscious()) {
+                    builder.append(" and conscious.");
+                } else {
+                    builder.append(" and has passed out.");
+                }
+            } else {
+                builder.append("and has died.");
+            }
             System.out.println(builder.toString());
             System.out.println(String.format("There are %d pirates left in the crew.", countLivePirates()));
         }
     }
 
-    public boolean battle(Ship otherShip){
+    public boolean battle(Ship otherShip) {
         boolean won;
-        if (this.calculateScore() > otherShip.calculateScore()){
+        if (this.calculateScore() > otherShip.calculateScore()) {
             won = true;
             otherShip.killSomePirates();
             haveParty();
@@ -43,15 +51,15 @@ public class Ship {
         return won;
     }
 
-    private void killSomePirates(){
-        int deaths = (int) (Math.random() * (crew.size()+1));
+    private void killSomePirates() {
+        int deaths = (int) (Math.random() * (crew.size() + 1));
         for (int i = 0; i < deaths; i++) {
             crew.get(i).getKilled();
         }
     }
 
-    private void haveParty(){
-        for (Pirate pirate : crew){
+    private void haveParty() {
+        for (Pirate pirate : crew) {
             int drinks = (int) (Math.random() * 6);
             for (int i = 0; i < drinks; i++) {
                 pirate.drinkSomeRum();
@@ -63,15 +71,16 @@ public class Ship {
 //        captain.howsItGoingMate();
     }
 
-    private int calculateScore(){
+    private int calculateScore() {
         return (countLivePirates() - captain.checkDrinks());
     }
 
-    public int countLivePirates(){
+    public int countLivePirates() {
         int livePirates = 0;
-        for (Pirate pirate : crew){
-            if (pirate.checkAlive()){
-                livePirates++;}
+        for (Pirate pirate : crew) {
+            if (pirate.checkAlive()) {
+                livePirates++;
+            }
         }
         return livePirates;
     }

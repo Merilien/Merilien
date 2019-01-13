@@ -10,6 +10,6 @@ public class AnimalsAndLegs {
         System.out.println("Please enter 2 integers!");
         int chicken = scanner.nextInt();
         int pigs = scanner.nextInt();
-        System.out.println("The animals have " + (chicken*2 + pigs*4) + " legs together.");
+        System.out.println("The animals have " + (chicken * 2 + pigs * 4) + " legs together.");
     }
 }

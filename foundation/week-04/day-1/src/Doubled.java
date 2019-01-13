@@ -11,7 +11,7 @@ public class Doubled {
         decryptFile("duplicated-chars.txt");
     }
 
-    public static void decryptFile(String file){
+    public static void decryptFile(String file) {
         try {
             List<String> data = Files.readAllLines(Paths.get(file));
             List<String> decodedData = new ArrayList<>();

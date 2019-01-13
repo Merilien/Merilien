@@ -24,6 +24,7 @@ public class UtilityService {
     public String randomColor() {
         return colors.get(random.nextInt(colors.size()));
     }
+
     public Boolean validateEmail(String inputString) {
         return inputString.contains("@") && inputString.contains(".");
     }
@@ -33,9 +34,9 @@ public class UtilityService {
             number = 26 + number;
         }
         String result = "";
-        for(int i = 0; i < text.length(); i++) {
+        for (int i = 0; i < text.length(); i++) {
             int offset = Character.isUpperCase(text.charAt(i)) ? 'A' : 'a';
-            result += (char)(((int)text.charAt(i) + number - offset) % 26 + offset);
+            result += (char) (((int) text.charAt(i) + number - offset) % 26 + offset);
         }
         return result;
     }

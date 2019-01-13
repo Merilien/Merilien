@@ -1,18 +1,17 @@
-package com.greenfox.webshop.Controllers;
+package com.greenfox.webshop.controllers;
 
-import com.greenfox.webshop.ShopItem;
-import com.greenfox.webshop.WebShop;
+import com.greenfox.webshop.models.ShopItem;
+import com.greenfox.webshop.models.WebShop;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @org.springframework.stereotype.Controller
 public class ShopController {
     WebShop myShop;
 
-    public ShopController(){
+    public ShopController() {
         myShop = new WebShop("HUF");
         myShop.addItem(new ShopItem("A single sock", "We don't know", 2000, 1));
         myShop.addItem(new ShopItem("Christmas cookie assortment", "Yum", 2500, 2800));
@@ -47,7 +46,7 @@ public class ShopController {
 
     @PostMapping("/webshop/products/search_item")
     public String acceptSearch(@RequestParam String search) {
-       return "redirect:/webshop/products/search_item?keyword=" + search;
+        return "redirect:/webshop/products/search_item?keyword=" + search;
     }
 
     @GetMapping("/webshop/show/average_stock")

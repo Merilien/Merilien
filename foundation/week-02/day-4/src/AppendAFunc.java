@@ -12,7 +12,7 @@ public class AppendAFunc {
         System.out.println(appendA(typo));
     }
 
-    public static String appendA(String string){
+    public static String appendA(String string) {
         return string += "a";
     }
 }

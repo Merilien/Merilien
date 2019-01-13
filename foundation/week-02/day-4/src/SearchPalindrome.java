@@ -10,7 +10,7 @@ public class SearchPalindrome {
         System.out.println(searchPalindrome("salalallaal"));
     }
 
-    public static ArrayList<String> searchPalindrome(String string){
+    public static ArrayList<String> searchPalindrome(String string) {
         int len = string.length();
         ArrayList<String> palis = new ArrayList<>();
         for (int i = 0; i <= len - 2; i++) {
@@ -27,7 +27,7 @@ public class SearchPalindrome {
     public static boolean isPalindrom(String substring) {
         int len = substring.length();
         boolean isPali = true;
-        for (int a = 0; a <= len / 2; a++){
+        for (int a = 0; a <= len / 2; a++) {
             if (substring.charAt(a) != substring.charAt(len - 1 - a)) {
                 isPali = false;
                 break;

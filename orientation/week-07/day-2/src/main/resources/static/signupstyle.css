@@ -1,0 +1,63 @@
+body {
+    background-color: #eeeeee;
+}
+
+.signup {
+    width: 700px;
+    background-color: white;
+    display: grid;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Helvetica;
+    padding: 50px 50px 25px 50px;
+    border-radius: 3px;
+}
+
+form {
+
+}
+
+p {
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+input {
+    display: block;
+    height: 40px;
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 18px;
+}
+
+input:focus {
+    border-bottom: 3px solid #16a085;
+}
+
+button {
+    display: block;
+    margin-top: 25px;
+    height: 40px;
+    width: 20%;
+    border: none;
+    background: #16a085;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background: forestgreen;
+}
+
+
+
+

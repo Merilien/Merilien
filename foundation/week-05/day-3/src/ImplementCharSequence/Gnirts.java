@@ -20,6 +20,6 @@ public class Gnirts implements CharSequence {
 
     @Override
     public CharSequence subSequence(int start, int end) {
-        return string.subSequence(string.length() - end, string.length()- start);
+        return string.subSequence(string.length() - end, string.length() - start);
     }
 }

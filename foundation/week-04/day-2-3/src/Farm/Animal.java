@@ -4,24 +4,25 @@ class Animal {
     private int hunger;
     private int thirst;
 
-    public Animal(){
+    public Animal() {
         this.hunger = 50;
         this.thirst = 50;
     }
 
-    public void eat(){
+    public void eat() {
         this.hunger--;
     }
 
-    public void drink(){
+    public void drink() {
         this.thirst--;
     }
 
-    public void play(){
+    public void play() {
         this.hunger++;
         this.thirst++;
     }
-    public int getHunger(){
+
+    public int getHunger() {
         return this.hunger;
     }
 

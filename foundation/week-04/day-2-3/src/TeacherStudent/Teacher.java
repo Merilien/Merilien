@@ -2,7 +2,7 @@ package TeacherStudent;
 
 public class Teacher {
 
-    public void teach(Student student){
+    public void teach(Student student) {
         student.learn();
     }
 

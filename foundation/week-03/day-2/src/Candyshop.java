@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Candyshop{
-    public static void main(String... args){
+public class Candyshop {
+    public static void main(String... args) {
         ArrayList<Object> arrayList = new ArrayList<Object>();
         arrayList.add("Cupcake");
         arrayList.add(2);
@@ -16,7 +16,8 @@ public class Candyshop{
         System.out.println(sweets(arrayList));
         // Expected output: "Cupcake", "Croissant", "Brownie", "Ice cream"
     }
-    public  static  ArrayList<Object> sweets(ArrayList<Object> list){
+
+    public static ArrayList<Object> sweets(ArrayList<Object> list) {
         list.set(1, "Croissant");
         list.set(3, "Ice cream");
         return list;

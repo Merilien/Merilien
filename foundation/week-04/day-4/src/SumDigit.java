@@ -8,8 +8,8 @@ public class SumDigit {
         System.out.println(addDigits(123));
     }
 
-    public static int addDigits(int n){
-        if (n < 10){
+    public static int addDigits(int n) {
+        if (n < 10) {
             return n;
         }
         return n % 10 + addDigits(n / 10);

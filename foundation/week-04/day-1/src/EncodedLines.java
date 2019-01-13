@@ -10,7 +10,8 @@ public class EncodedLines {
         // Create a method that decrypts encoded-lines.txt
         decryptFile("encoded-lines.txt");
     }
-    public static void decryptFile(String file){
+
+    public static void decryptFile(String file) {
         try {
             List<String> data = Files.readAllLines(Paths.get(file));
             List<String> decodedData = new ArrayList<>();
@@ -19,7 +20,7 @@ public class EncodedLines {
                 String newLine = "";
                 for (int i = 0; i < line.length(); i++) {
                     int c = (int) line.charAt(i);
-                    newLine += (char) (c-1);
+                    newLine += (char) (c - 1);
                 }
                 decodedData.add(newLine);
             }

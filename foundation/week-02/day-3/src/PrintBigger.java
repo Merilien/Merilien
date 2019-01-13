@@ -9,8 +9,7 @@ public class PrintBigger {
         double b = scanner.nextDouble();
         if (a > b) {
             System.out.println(a);
-        }
-        else {
+        } else {
             System.out.println(b);
         }
     }

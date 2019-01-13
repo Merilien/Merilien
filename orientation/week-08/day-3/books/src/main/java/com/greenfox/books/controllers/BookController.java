@@ -33,7 +33,7 @@ public class BookController {
         return "booklist";
     }
 
-    @GetMapping(path ="/books/{id}/details")
+    @GetMapping(path = "/books/{id}/details")
     public String getBookById(Model model, @PathVariable(name = "id") int id) {
         Book selected = null;
         for (Book book : books) {
@@ -50,20 +50,16 @@ public class BookController {
     }
 
     @GetMapping("/books/add")
-    public String addBookForm(Model model, @ModelAttribute(name="book") Book book) {
+    public String addBookForm(Model model, @ModelAttribute(name = "book") Book book) {
         model.addAttribute("book", book);
         return "createbook";
     }
 
     @PostMapping("/books/add")
-    public String addBook(@ModelAttribute(name="book") Book book) {
+    public String addBook(@ModelAttribute(name = "book") Book book) {
         books.add(book);
         return "redirect:/books";
     }
-
-
-
-
 
 
 }

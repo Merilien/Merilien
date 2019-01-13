@@ -16,8 +16,8 @@ public class WriteSingleLine {
         List<String> myName = new ArrayList<>();
         myName.add("Bettina");
         try {
-            Files.write(path,myName);
-        } catch (IOException exception){
+            Files.write(path, myName);
+        } catch (IOException exception) {
             System.out.println("Unable to write file: my-file.txt");
         }
     }

@@ -21,7 +21,7 @@ public class TicTacToe {
         // Should print "Draw"
     }
 
-    public static String ticTacResult(String file){
+    public static String ticTacResult(String file) {
         try {
             List<String> result = Files.readAllLines(Paths.get(file));
             String xwin = "XXX";
@@ -30,8 +30,11 @@ public class TicTacToe {
             //check diagonals
             String diag1 = "" + result.get(0).charAt(0) + result.get(1).charAt(1) + result.get(2).charAt(2);
             String diag2 = "" + result.get(2).charAt(0) + result.get(1).charAt(1) + result.get(0).charAt(2);
-            if (diag1.equals(xwin) || diag2.equals(xwin)){ return "X";}
-            else if (diag1.equals(owin) || diag2.equals(owin)){ return "O";}
+            if (diag1.equals(xwin) || diag2.equals(xwin)) {
+                return "X";
+            } else if (diag1.equals(owin) || diag2.equals(owin)) {
+                return "O";
+            }
 
             //check rows & columns
             for (int i = 0; i < result.size(); i++) {
@@ -42,8 +45,11 @@ public class TicTacToe {
                 for (int j = 0; j < result.size(); j++) {
                     column += result.get(j).charAt(i);
                 }
-                if (column.equals(xwin) || row.equals(xwin)){ return "X";}
-                else if (column.equals(owin) || row.equals(owin)){return "O";}
+                if (column.equals(xwin) || row.equals(xwin)) {
+                    return "X";
+                } else if (column.equals(owin) || row.equals(owin)) {
+                    return "O";
+                }
             }
 
             return "Draw";

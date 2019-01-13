@@ -4,29 +4,29 @@ public class Counter {
     int value;
     int initValue;
 
-    public Counter(){
+    public Counter() {
         this.initValue = 0;
         this.reset();
     }
 
-    public Counter(int value){
+    public Counter(int value) {
         this.initValue = value;
         this.reset();
     }
 
-    public void add(int num){
+    public void add(int num) {
         this.value += num;
     }
 
-    public void add(){
+    public void add() {
         this.value++;
     }
 
-    public int get(){
+    public int get() {
         return this.value;
     }
 
-    public void reset(){
+    public void reset() {
         this.value = initValue;
     }
 

@@ -9,13 +9,13 @@
 <div>
     <table>
         <thead>
-            <tr>
-                <th>Index</th>
-                <th>Name</th>
-                <th>Balance</th>
-                <th>Species</th>
-                <th>Alignment</th>
-            </tr>
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Balance</th>
+            <th>Species</th>
+            <th>Alignment</th>
+        </tr>
         </thead>
         <tr th:each="account : ${accounts}" th:object="${account}" th:style="*{king} ? 'color:gold' : 'color:black'">
             <td th:text="${accountStat.index}"></td>

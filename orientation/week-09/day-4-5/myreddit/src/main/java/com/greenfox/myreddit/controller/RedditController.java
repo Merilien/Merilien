@@ -46,14 +46,14 @@ public class RedditController {
     }
 
     @GetMapping("/{id}/upvote")
-    public String upVotePost(@PathVariable Long postId, @RequestParam(name = "user") Long userId) {
-        postService.upVotePost(postId);
+    public String upVotePost(@PathVariable Long id, @RequestParam(name = "user") Long userId) {
+        postService.upVotePost(id);
         return "redirect:/posts?user=" + userId;
     }
 
     @GetMapping("/{id}/downvote")
-    public String downVotePost(@PathVariable Long postId, @RequestParam(name = "user") Long userId) {
-        postService.downVotePost(postId);
+    public String downVotePost(@PathVariable Long id, @RequestParam(name = "user") Long userId) {
+        postService.downVotePost(id);
         return "redirect:/posts?user=" + userId;
     }
 
@@ -71,7 +71,7 @@ public class RedditController {
     }
 
     @PostMapping("/submit")
-    public String submitPost(@ModelAttribute(name="post") Post post, @RequestParam(name = "user") Long id) {
+    public String submitPost(@ModelAttribute(name = "post") Post post, @RequestParam(name = "user") Long id) {
         Post newpost = post;
         User user = userService.getUser(id);
         newpost.setUser(user);

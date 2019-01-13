@@ -7,8 +7,8 @@ public class Doubling {
         System.out.println(doubleIt(baseNum));
     }
 
-    public static int doubleIt(int a){
-        return a*= 2;
+    public static int doubleIt(int a) {
+        return a *= 2;
     }
 }
 

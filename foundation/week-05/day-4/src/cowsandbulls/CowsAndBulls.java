@@ -7,7 +7,7 @@ public class CowsAndBulls {
     private String gameState;
     private int guessCounter;
 
-    public CowsAndBulls(){
+    public CowsAndBulls() {
         gameState = "playing";
         guessCounter = 0;
         num = String.valueOf((int) (Math.random() * 9001) + 1000);
@@ -59,16 +59,15 @@ public class CowsAndBulls {
 //                        bulls++;
 //                        guessed = guessed.replaceFirst(guessed.charAt(j) + "", "-");
 //                    }
-                }
+            }
         }
         return String.format("%d cows, %d bulls.", cows, bulls);
     }
 
 
     public void checkGameState() {
-        System.out.println("Game is " + (gameState == "finished" ?  "not " : "") + "playable.");
+        System.out.println("Game is " + (gameState == "finished" ? "not " : "") + "playable.");
     }
-
 
 
 }

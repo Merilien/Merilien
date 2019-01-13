@@ -6,7 +6,7 @@ public class String3 {
         System.out.println(addStars("xxooooxoetrdtfzguhxxx"));
     }
 
-    public static String addStars(String string){
+    public static String addStars(String string) {
         if (string.length() == 1) {
             return string;
         }

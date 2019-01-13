@@ -9,9 +9,9 @@ public class Factorial {
 
     }
 
-    public static int factorio(int num){
+    public static int factorio(int num) {
         int factorial = 1;
-        for (int a = 1; a <= num; a++){
+        for (int a = 1; a <= num; a++) {
             factorial *= a;
         }
         return factorial;

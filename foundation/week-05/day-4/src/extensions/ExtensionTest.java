@@ -1,7 +1,9 @@
 package extensions;
 
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -33,12 +35,12 @@ class ExtensionTest {
 
     @Test
     void testMedian_four() {
-        assertEquals(5, extension.median(Arrays.asList(7,5,10,3,10,5,5)));
+        assertEquals(5, extension.median(Arrays.asList(7, 5, 10, 3, 10, 5, 5)));
     }
 
     @Test
     void testMedian_five() {
-        assertEquals(3, extension.median(Arrays.asList(1,2,3,4,5)));
+        assertEquals(3, extension.median(Arrays.asList(1, 2, 3, 4, 5)));
     }
 
     @Test

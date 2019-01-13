@@ -9,12 +9,12 @@ public class Bunny2 {
 
     }
 
-    public static int countEars(int n){
-        if (n == 1){
+    public static int countEars(int n) {
+        if (n == 1) {
             return 2;
         }
         int ears;
-        if (n % 2 == 0){
+        if (n % 2 == 0) {
             ears = 3;
         } else {
             ears = 2;

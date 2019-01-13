@@ -17,7 +17,7 @@ public class User {
     @OneToMany
     private List<Post> posts;
 
-    public User(){
+    public User() {
         username = "";
         posts = new ArrayList<>();
     }

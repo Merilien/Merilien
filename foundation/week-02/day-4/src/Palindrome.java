@@ -5,9 +5,9 @@ public class Palindrome {
         System.out.println(createPalindrome("hhhrrrrrrfhhhrf"));
     }
 
-    public static String createPalindrome(String word){
+    public static String createPalindrome(String word) {
         String pali = word;
-        for (int a = word.length() - 1; a >= 0; a--){
+        for (int a = word.length() - 1; a >= 0; a--) {
             pali += word.charAt(a);
         }
         return pali;

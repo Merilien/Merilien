@@ -13,15 +13,13 @@ public class GuessTheNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Guess the number!");
         boolean guessedRight = false;
-        while (!guessedRight){
+        while (!guessedRight) {
             int guess = scanner.nextInt();
-            if(guess < num) {
+            if (guess < num) {
                 System.out.println("The stored number is higher");
-            }
-            else if (guess > num) {
+            } else if (guess > num) {
                 System.out.println("The stored number is lower");
-            }
-            else {
+            } else {
                 guessedRight = true;
                 System.out.println("You found the number: " + num);
             }

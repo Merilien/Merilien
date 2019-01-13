@@ -1,6 +1,6 @@
 package BlogPost;
 
-class BlogPost{
+class BlogPost {
     String authorName;
     String title;
     String text;

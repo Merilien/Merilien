@@ -4,7 +4,7 @@
 public class AppendA {
     public static void main(String[] args) {
         String[] animals = {"koal", "pand", "zebr"};
-        for (int a = 0; a < animals.length; a++){
+        for (int a = 0; a < animals.length; a++) {
             animals[a] += "a";
         }
     }

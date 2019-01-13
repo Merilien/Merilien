@@ -10,11 +10,12 @@ public class ReversedOrder {
         // Create a method that decrypts reversed-order.txt
         decryptFile("reversed-order.txt");
     }
-    public static void decryptFile(String file){
+
+    public static void decryptFile(String file) {
         try {
             List<String> data = Files.readAllLines(Paths.get(file));
             List<String> decodedData = new ArrayList<>();
-            for (int i = data.size()-1; i >= 0 ; i--) {
+            for (int i = data.size() - 1; i >= 0; i--) {
                 decodedData.add(data.get(i));
             }
             Files.write(Paths.get("order-reversed.txt"), decodedData);

@@ -5,17 +5,17 @@ class Sharpie {
     float width;
     float inkAmount;
 
-    public Sharpie(String color, float width){
+    public Sharpie(String color, float width) {
         this.color = color;
         this.width = width;
         this.inkAmount = 10;
     }
 
-    public void use(){
+    public void use() {
         this.inkAmount -= 1;
     }
 
-    public boolean hasInk(){
+    public boolean hasInk() {
         return (this.inkAmount > 0);
     }
 

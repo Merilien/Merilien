@@ -8,13 +8,13 @@ public class ColoredBox {
     public static void mainDraw(Graphics graphics) {
         // Draw a box that has different colored lines on each edge.
         graphics.setColor(Color.GREEN);
-        graphics.drawLine(20,20,20,120);
+        graphics.drawLine(20, 20, 20, 120);
         graphics.setColor(Color.RED);
-        graphics.drawLine(20,120,120,120);
+        graphics.drawLine(20, 120, 120, 120);
         graphics.setColor(Color.BLUE);
-        graphics.drawLine(120,120,120,20);
+        graphics.drawLine(120, 120, 120, 20);
         graphics.setColor(Color.YELLOW);
-        graphics.drawLine(120,20,20,20);
+        graphics.drawLine(120, 20, 20, 20);
     }
 
     // Don't touch the code below

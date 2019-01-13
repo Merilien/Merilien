@@ -1,4 +1,5 @@
 package extensions;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,7 +30,7 @@ public class Extension {
 
     int median(List<Integer> pool) {
         pool.sort(Integer::compareTo);
-        return pool.get((pool.size()-1)/2);
+        return pool.get((pool.size() - 1) / 2);
     }
 
     boolean isVowel(char c) {
@@ -42,9 +43,9 @@ public class Extension {
         for (int i = 0; i < length; i++) {
             char c = teve.charAt(i);
             if (isVowel(c)) {
-                teve = teve.substring(0,i) + c + "v" + c + teve.substring(i+1, length);
-                i+=2;
-                length+=2;
+                teve = teve.substring(0, i) + c + "v" + c + teve.substring(i + 1, length);
+                i += 2;
+                length += 2;
             }
         }
         return teve;

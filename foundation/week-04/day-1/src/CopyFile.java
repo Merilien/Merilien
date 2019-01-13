@@ -13,11 +13,11 @@ public class CopyFile {
         copyFile("textfile.txt", "newtext.txt");
     }
 
-    public static boolean copyFile(String file1, String file2){
+    public static boolean copyFile(String file1, String file2) {
         try {
             List<String> lines = Files.readAllLines(Paths.get(file1));
             Files.write(Paths.get(file2), lines);
-        } catch (IOException e){
+        } catch (IOException e) {
             return false;
         }
         return true;

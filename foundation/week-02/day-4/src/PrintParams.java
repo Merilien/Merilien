@@ -12,11 +12,11 @@
 // ...
 public class PrintParams {
     public static void main(String[] args) {
-        printParams("first","second", "third");
+        printParams("first", "second", "third");
     }
 
-    public static void printParams(String ... params){
-        for (String p : params){
+    public static void printParams(String... params) {
+        for (String p : params) {
             System.out.println(p);
         }
     }

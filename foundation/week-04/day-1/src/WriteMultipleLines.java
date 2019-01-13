@@ -19,13 +19,13 @@ public class WriteMultipleLines {
         writeLines("textfile.txt", "apple", 5);
     }
 
-    public static void writeLines(String path, String word, int lines){
+    public static void writeLines(String path, String word, int lines) {
         List<String> words = new ArrayList<>();
         for (int i = 0; i < lines; i++) {
             words.add(word);
         }
         try {
-            Files.write(Paths.get(path),words);
+            Files.write(Paths.get(path), words);
         } catch (IOException e) {
         }
     }
